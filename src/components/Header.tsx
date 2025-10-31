@@ -41,14 +41,6 @@ const Header = () => {
     {
       label: "Inkjet Media",
       href: "/inkjet-media",
-      children: [
-        { label: "Bond paper", href: "/inkjet-media/bond-paper" },
-        { label: "Coated paper", href: "/inkjet-media/coated-paper" },
-        { label: "Enhanced coated paper", href: "/inkjet-media/enhanced-coated-paper" },
-        { label: "Photo paper", href: "/inkjet-media/photo-paper" },
-        { label: "Canvas", href: "/inkjet-media/canvas" },
-        { label: "Vinyl", href: "/inkjet-media/vinyl" },
-      ],
     },
     {
       label: "Solvent Media",
@@ -57,6 +49,7 @@ const Header = () => {
         { label: "PVC", href: "/solvent-media#pvc" },
         { label: "Paper", href: "/solvent-media#paper" },
         { label: "Vinyl", href: "/solvent-media#vinyl" },
+        { label: "Wallpaper", href: "/solvent-media#wallpaper" },
         { label: "Other", href: "/solvent-media#other" },
       ],
     },

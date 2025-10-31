@@ -42,6 +42,7 @@ const SolventMedia = () => {
     { id: "pvc", name: "PVC" },
     { id: "paper", name: "Paper" },
     { id: "vinyl", name: "Vinyl" },
+    { id: "wallpaper", name: "Wallpaper" },
     { id: "other", name: "Other" },
   ];
 
@@ -50,10 +51,19 @@ const SolventMedia = () => {
     toId("Avery MPI1105 (7-10 Year)"),
     toId("Haus 5 Year"),
   ]);
+  const pvcNameExceptions = new Set([
+    toId("Mesh with Liner"),
+  ]);
+  const otherNameExceptions = new Set([
+    toId("T-Shirt Transfer Vinyl"),
+  ]);
   const getSubCategory = (name: string) => {
     const n = name.toLowerCase();
-    if (n.includes("pvc")) return "pvc";
+    if (n.includes("pvc") || pvcNameExceptions.has(n)) return "pvc";
+    // Check wallpaper before paper to avoid misclassification
+    if (n.includes("wallpaper")) return "wallpaper";
     if (n.includes("paper")) return "paper";
+    if (otherNameExceptions.has(n)) return "other";
     if (n.includes("vinyl") || vinylNameExceptions.has(n)) return "vinyl";
     return "other";
   };
@@ -551,6 +561,24 @@ const SolventMedia = () => {
   const isValidSection = sections.some((s) => s.id === activeSectionId);
   const visibleSections = isValidSection ? sections.filter((s) => s.id === activeSectionId) : sections;
 
+  // Preferred display order for Vinyl items
+  const vinylOrder = [
+    "Haus Monomeric Vinyl 1 Year",
+    "Haus Monomeric Vinyl 3 Year",
+    "Orajet 3164 Monomeric Vinyl 4 Year",
+    "Haus High Tack Vinyl",
+    "Haus Perforated Vinyl",
+    "Haus Frosted Vinyl",
+    "Haus Eezidot Vinyl",
+    "Haus 5 Year",
+    "Orajet Polymeric Vinyl 3165/3651RA 5 Year",
+    "Avery MPI1105 (7-10 Year)",
+    "Mactac Cast Vinyl JT10700 (7 Year)",
+    "Haus Reflective Vinyl",
+    "Avery Reflective Vinyl",
+  ];
+  const vinylOrderMap = new Map(vinylOrder.map((name, idx) => [name, idx]));
+
   return (
     <div>
       <Header />
@@ -592,6 +620,13 @@ const SolventMedia = () => {
               <div className="grid grid-cols-1 gap-8 xl:gap-10 max-w-4xl mx-auto">
                 {products
                   .filter((p) => getSubCategory(p.name) === category.id)
+                  .sort((a, b) => {
+                    if (category.id !== "vinyl") return 0;
+                    const ai = vinylOrderMap.has(a.name) ? (vinylOrderMap.get(a.name) as number) : Number.POSITIVE_INFINITY;
+                    const bi = vinylOrderMap.has(b.name) ? (vinylOrderMap.get(b.name) as number) : Number.POSITIVE_INFINITY;
+                    if (ai === bi) return 0;
+                    return ai - bi;
+                  })
                   .map((product) => (
                     <ProductCard
                       key={product.name}

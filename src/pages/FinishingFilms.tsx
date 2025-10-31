@@ -1,25 +1,25 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import glossLaminate from "@/assets/gloss-laminate.jpg";
-import mattLaminate from "@/assets/matt-laminate.jpg";
 import mountingAdhesive from "@/assets/mounting-adhesive.jpg";
 import ProductCard from "../components/ui/ProductCard";
 
 const FinishingFilms = () => {
   const products = [
     {
-      name: "Gloss Lamination",
+      name: "Lamination",
       description:
-        "Crystal clear gloss laminate for print protection and enhancement. UV resistant with excellent clarity.",
+        "Laminating film for print protection and enhancement. UV resistant with excellent clarity.",
       image: glossLaminate,
       specs: {
         thickness: "75 Microns, 100 Microns",
-        finish: "Gloss",
+        finish: "Gloss, Matt, Crystal",
         sizes: "1370mm, 1520mm",
         length: "50m, 100m",
-        application: "Cold lamination",
+       
       },
     },
+    
     {
       name: "Double-sided Mounting Film",
       description:
@@ -42,31 +42,6 @@ const FinishingFilms = () => {
         finish: "N/A",
         sizes: "1300mm",
         length: "25m, 50m",
-      },
-    },
-    {
-      name: "Matt Lamination",
-      description:
-        "Anti-glare matt laminate for professional finish without reflections. Perfect for indoor displays and posters.",
-      image: mattLaminate,
-      specs: {
-        thickness: "75 Microns, 100 Microns",
-        finish: "Matt",
-        sizes: "1370mm, 1520mm",
-        length: "50m, 100m",
-        application: "Cold lamination",
-      },
-    },
-    {
-      name: "Mounting Adhesive",
-      description: "Clear permanent and repositionable adhesive films for mounting prints to various substrates.",
-      image: mountingAdhesive,
-      specs: {
-        thickness: "100 Microns",
-        finish: "Clear",
-        sizes: "1370mm, 1520mm",
-        length: "50m",
-        application: "Cold application, permanent & repositionable",
       },
     },
   ];
