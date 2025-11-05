@@ -12,14 +12,7 @@ interface ProductCardProps {
 const ProductCard = ({ name, description, image, specs }: ProductCardProps) => {
   return (
     <Card className="overflow-hidden h-full shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex flex-col md:flex-row-reverse md:items-stretch">
-        <div className="md:w-1/2 bg-muted h-56 md:h-auto md:min-h-[220px] flex items-center justify-center">
-          <img
-            src={image}
-            alt={name}
-            className="object-contain w-full h-full"
-          />
-        </div>
+      <div className="flex flex-col md:flex-row md:items-stretch">
         <div className="md:w-1/2 flex flex-col">
           <CardHeader className="pb-2">
             <CardTitle className="text-xl">{name}</CardTitle>
@@ -31,9 +24,12 @@ const ProductCard = ({ name, description, image, specs }: ProductCardProps) => {
 
             <div className="space-y-2 mb-6">
               {specs.map((spec, index) => (
-                <div key={index} className="grid grid-cols-3 gap-2 text-sm">
+                <div
+                  key={index}
+                  className="grid grid-cols-1 gap-1 text-sm sm:grid-cols-[auto,1fr]"
+                >
                   <dt className="font-medium text-muted-foreground">{spec.label}:</dt>
-                  <dd className="col-span-2">{spec.value}</dd>
+                  <dd>{spec.value}</dd>
                 </div>
               ))}
             </div>
@@ -45,6 +41,13 @@ const ProductCard = ({ name, description, image, specs }: ProductCardProps) => {
               </a>
             </Button>
           </CardContent>
+        </div>
+        <div className="md:w-1/2 bg-muted h-56 md:h-auto md:min-h-[220px] flex items-center justify-center">
+          <img
+            src={image}
+            alt={name}
+            className="object-contain w-full h-full"
+          />
         </div>
       </div>
     </Card>

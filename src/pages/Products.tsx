@@ -4,10 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import bondPaper from "@/assets/bond-paper-new.jpg";
-import coatedPaper from "@/assets/coated-paper-new.jpg";
+import coatedPaper from "@/assets/coated-paper.jpg";
+import enhancedCoated from "@/assets/coated-paper-new.jpg";
 import photoPaper from "@/assets/photo-paper-new.jpg";
 import canvas from "@/assets/carwrap.jpg";
-import mattVinyl from "@/assets/vinyl-new.jpg";
+import vinylImage from "@/assets/vinyl-new.jpg";
 import glossVinyl from "@/assets/gloss-vinyl.jpg";
 import castVinyl from "@/assets/cast-vinyl.jpg";
 import blockoutBanner from "@/assets/blockout-banner.jpg";
@@ -22,40 +23,57 @@ const Products = () => {
     {
       name: "Bond Paper",
       category: "Inkjet Media",
-      description: "A standard uncoated 80gsm paper used to print CAD drawings, landscaping plans, blueprints, and templates. Acid-free and won't yellow over time.",
+      description:
+        "A standard uncoated 80gsm paper used to print CAD drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won't yellow over time. Fits most large-format printers and engineering copiers.",
       image: bondPaper,
       specs: [
         { label: "Thickness", value: "80gsm" },
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "294mm, 420mm, 594mm, 610mm, 841mm, 914mm, 1118mm, 1270mm, 1370mm, 1524mm" },
         { label: "Length", value: "50m, 100m, 150m" },
-        { label: "Printer Compatibility", value: "Inkjet, Solvent, Eco-solvent, Latex, UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Solvent, Eco-solvent, Latex and UV" },
       ],
     },
     {
       name: "Coated Paper",
       category: "Inkjet Media",
-      description: "A matt white coated paper with a special inkjet coating for sharp images.",
+      description:
+        "A matt white coated paper which has a special inkjet coating to allow the ink not to bleed in order to produce very sharp images. For indoor poster use.",
       image: coatedPaper,
       specs: [
         { label: "Thickness", value: "90gsm, 125gsm, 180gsm" },
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
         { label: "Length", value: "30m, 45m" },
-        { label: "Printer Compatibility", value: "Inkjet, Latex, UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
+      ],
+    },
+    {
+      name: "Enhanced Coated Paper",
+      category: "Inkjet Media",
+      description:
+        "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
+      image: enhancedCoated,
+      specs: [
+        { label: "Thickness", value: "200gsm" },
+        { label: "Finish", value: "Satin / Matt" },
+        { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
+        { label: "Length", value: "30m" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
     {
       name: "Photo Paper",
       category: "Inkjet Media",
-      description: "High-quality resin-coated paper for photographic reproduction.",
+      description:
+        "A very high quality resin coated paper used for photographic reproduction. Excellent colour gamut, vivid images.",
       image: photoPaper,
       specs: [
         { label: "Thickness", value: "190gsm, 260gsm" },
         { label: "Finish", value: "Matt, satin, lustre, gloss" },
         { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
         { label: "Length", value: "30m" },
-        { label: "Printer Compatibility", value: "Inkjet, Latex, UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
     {
@@ -69,7 +87,7 @@ const Products = () => {
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
         { label: "Length", value: "18m" },
-        { label: "Printer Compatibility", value: "Inkjet, Latex, UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
     {
@@ -83,14 +101,28 @@ const Products = () => {
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
         { label: "Length", value: "18m" },
-        { label: "Printer Compatibility", value: "Inkjet, Latex, UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
+      ],
+    },
+    {
+      name: "Self-Adhesive Vinyl (Inkjet)",
+      category: "Inkjet Media",
+      description:
+        "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
+      image: vinylImage,
+      specs: [
+        { label: "Thickness", value: "100-150 Microns" },
+        { label: "Finish", value: "Matt / Gloss" },
+        { label: "Available Sizes", value: "610mm, 914mm, 1370mm, 1520mm" },
+        { label: "Length", value: "50m" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
     {
       name: "Matt Vinyl",
       category: "Solvent Media",
       description: "Durable outdoor vinyl with a matt finish. Perfect for signage and wraps.",
-      image: mattVinyl,
+      image: vinylImage,
       specs: [
         { label: "Thickness", value: "150 Microns" },
         { label: "Finish", value: "Matt" },
@@ -286,21 +318,19 @@ const Products = () => {
               <div className="space-y-16">
                 {products
                   .filter((product) => product.category === category.name)
-                  .map((product, index) => (
-                    <div
-                      key={product.name}
-                      className={`grid md:grid-cols-2 gap-8 items-center ${
-                        index % 2 === 1 ? "md:flex-row-reverse" : ""
-                      }`}
-                    >
-                      <div className={index % 2 === 1 ? "md:order-2" : ""}>
+                  .map((product, index) => {
+                    const imageSection = (
+                      <div>
                         <img
                           src={product.image}
                           alt={product.name}
                           className="w-full h-[400px] object-cover rounded-lg shadow-lg"
                         />
                       </div>
-                      <div className={index % 2 === 1 ? "md:order-1" : ""}>
+                    );
+
+                    const contentSection = (
+                      <div>
                         <h3 className="text-3xl font-bold mb-4">{product.name}</h3>
                         <p className="text-muted-foreground mb-6">{product.description}</p>
 
@@ -311,9 +341,12 @@ const Products = () => {
                           <CardContent>
                             <dl className="space-y-3">
                               {product.specs.map((spec) => (
-                                <div key={spec.label} className="grid grid-cols-3 gap-4">
+                                <div
+                                  key={spec.label}
+                                  className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-[auto,1fr]"
+                                >
                                   <dt className="font-medium text-muted-foreground">{spec.label}:</dt>
-                                  <dd className="col-span-2">{spec.value}</dd>
+                                  <dd>{spec.value}</dd>
                                 </div>
                               ))}
                             </dl>
@@ -332,8 +365,26 @@ const Products = () => {
                           </Button>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+
+                    const isEven = index % 2 === 0;
+
+                    return (
+                      <div key={product.name} className="grid gap-8 items-center md:grid-cols-2">
+                        {isEven ? (
+                          <>
+                            {imageSection}
+                            {contentSection}
+                          </>
+                        ) : (
+                          <>
+                            {contentSection}
+                            {imageSection}
+                          </>
+                        )}
+                      </div>
+                    );
+                  })}
               </div>
             </div>
           </section>

@@ -27,19 +27,6 @@ const InkjetMedia = () => {
       ],
     },
     {
-      name: "Enhanced Coated Paper",
-      description:
-        "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
-      image: enhancedCoated,
-      specs: [
-        { label: "Thickness", value: "200gsm" },
-        { label: "Finish", value: "Satin / Matt" },
-        { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
-        { label: "Length", value: "30m" },
-        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
-      ],
-    },
-    {
       name: "Coated Paper",
       description:
         "A matt white coated paper which has a special inkjet coating to allow the ink not to bleed in order to produce very sharp images. For indoor poster use.",
@@ -53,15 +40,15 @@ const InkjetMedia = () => {
       ],
     },
     {
-      name: "Self-Adhesive Vinyl (Inkjet)",
+      name: "Enhanced Coated Paper",
       description:
-        "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
-      image: vinylImage,
+        "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
+      image: enhancedCoated,
       specs: [
-        { label: "Thickness", value: "100–150 Microns" },
-        { label: "Finish", value: "Matt / Gloss" },
-        { label: "Available Sizes", value: "610mm, 914mm, 1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
+        { label: "Thickness", value: "200gsm" },
+        { label: "Finish", value: "Satin / Matt" },
+        { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
+        { label: "Length", value: "30m" },
         { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
@@ -101,6 +88,19 @@ const InkjetMedia = () => {
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
         { label: "Length", value: "18m" },
+        { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
+      ],
+    },
+    {
+      name: "Self-Adhesive Vinyl (Inkjet)",
+      description:
+        "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
+      image: vinylImage,
+      specs: [
+        { label: "Thickness", value: "100–150 Microns" },
+        { label: "Finish", value: "Matt / Gloss" },
+        { label: "Available Sizes", value: "610mm, 914mm, 1370mm, 1520mm" },
+        { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },

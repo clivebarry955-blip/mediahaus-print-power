@@ -49,7 +49,7 @@ const SolventMedia = () => {
   const toId = (s: string) => s.toLowerCase();
   const vinylNameExceptions = new Set([
     toId("Avery MPI1105 (7-10 Year)"),
-    toId("Haus 5 Year"),
+    toId("Haus 5 Year Polymeric Vinyl"),
   ]);
   const pvcNameExceptions = new Set([
     toId("Mesh with Liner"),
@@ -300,7 +300,7 @@ const SolventMedia = () => {
       ],
     },
     {
-      name: "Haus 5 Year",
+      name: "Haus 5 Year Polymeric Vinyl",
       description: "Premium vinyl offering 5 years of outdoor durability. Suitable for long-term branding and signage.",
       image: haus5YearVinyl,
       specs: [
@@ -570,7 +570,7 @@ const SolventMedia = () => {
     "Haus Perforated Vinyl",
     "Haus Frosted Vinyl",
     "Haus Eezidot Vinyl",
-    "Haus 5 Year",
+    "Haus 5 Year Polymeric Vinyl",
     "Orajet Polymeric Vinyl 3165/3651RA 5 Year",
     "Avery MPI1105 (7-10 Year)",
     "Mactac Cast Vinyl JT10700 (7 Year)",
