@@ -1,5 +1,36 @@
-const inkjetMediaBasePath =
-  "/01 Inkjet Media-20251107T134323Z-1-001/01 Inkjet Media";
+const trimTrailingSlash = (path: string) =>
+  path !== "/" && path.endsWith("/") ? path.slice(0, -1) : path;
+const trimLeadingSlash = (path: string) =>
+  path.startsWith("/") ? path.slice(1) : path;
+
+const normalizeBasePath = (path: string) => {
+  const trimmed = trimTrailingSlash(path);
+  return trimmed === "/" ? "" : trimmed;
+};
+
+const resolveBasePath = () => {
+  if (typeof document !== "undefined") {
+    const absoluteBase = new URL(
+      import.meta.env.BASE_URL || "/",
+      document.baseURI
+    ).pathname;
+    return normalizeBasePath(absoluteBase);
+  }
+  const base = import.meta.env.BASE_URL || "/";
+  return base.startsWith("/") ? normalizeBasePath(base) : "";
+};
+
+const basePath = resolveBasePath();
+
+const withBaseUrl = (relativePath: string) => {
+  const normalizedRelative = trimLeadingSlash(relativePath);
+  const prefix = basePath === "" ? "/" : `${basePath}/`;
+  return `${prefix}${normalizedRelative}`.replace(/\/{2,}/g, "/");
+};
+
+const inkjetMediaBasePath = withBaseUrl(
+  "01 Inkjet Media-20251107T134323Z-1-001/01 Inkjet Media"
+);
 
 export const inkjetImagePaths = {
   bondPaper: `${inkjetMediaBasePath}/1. Paper/Bond Paper/01 Bond-paper-1.jpg`,

@@ -7,8 +7,6 @@ import trisolvePosterPaper from "@/assets/coated-paper-new.jpg";
 import tearResistantSyntheticPaper from "@/assets/coated-paper.jpg";
 import magneticPaper from "@/assets/vinyl-new.jpg";
 import hausMonomericVinyl1Year from "@/assets/vinyl-new.jpg";
-import polymericVinyl from "@/assets/vinyl-new.jpg";
-import castVinyl from "@/assets/cast-vinyl.jpg";
 import hausMonomericVinyl3Year from "@/assets/vinyl-new.jpg";
 import oraJet3164 from "@/assets/vinyl-new.jpg";
 import hausHighTackVinyl from "@/assets/vinyl-new.jpg";
@@ -141,36 +139,6 @@ const SolventMedia = () => {
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "1 Year Outdoor" },
         { label: "Finish", value: "Matt" },
-        { label: "Available Sizes", value: "1370mm, 1520mm" },
-        { label: "Sizes", value: "1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-      ],
-    },
-    {
-      name: "Polymeric Vinyl",
-      description: "Flexible polymeric vinyl designed for medium-term outdoor applications. Resists shrinking and cracking.",
-      image: polymericVinyl,
-      specs: [
-        { label: "Thickness", value: "100 Microns" },
-        { label: "Durability", value: "3-5 Years Outdoor" },
-        { label: "Finish", value: "Matt" },
-        { label: "Available Sizes", value: "1370mm, 1520mm" },
-        { label: "Sizes", value: "1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-      ],
-    },
-    {
-      name: "Cast Vinyl",
-      description: "High-quality cast vinyl offering superior conformability for complex surfaces. Suitable for long-term use.",
-      image: castVinyl,
-      specs: [
-        { label: "Thickness", value: "80 Microns" },
-        { label: "Durability", value: "7+ Years Outdoor" },
-        { label: "Finish", value: "Gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
