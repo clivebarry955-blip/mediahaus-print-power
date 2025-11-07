@@ -15,7 +15,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <Button size="lg" asChild>
-              <a href="/products">Explore Our Products</a>
+              <a href="#products">Explore Our Products</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="/contact">Request Quote</a>

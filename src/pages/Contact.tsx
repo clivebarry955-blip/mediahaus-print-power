@@ -69,31 +69,68 @@ const Contact = () => {
                       <CardTitle>Phone & Email</CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent className="space-y-4">
+                  <CardContent className="space-y-6">
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Phone</p>
-                      <a
-                        href="tel:+27824404465"
-                        className="text-lg font-medium hover:text-accent transition-colors"
-                      >
-                        082 440 4465
-                      </a>
+                      <p className="text-sm text-muted-foreground uppercase tracking-wide">Phone</p>
+                      <div className="mt-3 space-y-3">
+                        <div>
+                          <p className="text-sm font-semibold text-foreground">Clive</p>
+                          <a
+                            href="tel:+27824404465"
+                            className="text-lg font-medium hover:text-accent transition-colors block"
+                          >
+                            082 440 4465
+                          </a>
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold text-foreground">Dawid</p>
+                          <a
+                            href="tel:+27722137792"
+                            className="text-lg font-medium hover:text-accent transition-colors block"
+                          >
+                            072 213 7792
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">Email</p>
-                      <a
-                        href="mailto:clive@mediahaus.co.za"
-                        className="text-lg font-medium hover:text-accent transition-colors"
-                      >
-                        clive@mediahaus.co.za
-                      </a>
+                      <p className="text-sm text-muted-foreground uppercase tracking-wide">Email</p>
+                      <div className="mt-3 flex flex-col gap-2 text-lg font-medium sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
+                          <p className="text-sm font-semibold text-foreground">Clive</p>
+                          <a
+                            href="mailto:clive@mediahaus.co.za"
+                            className="hover:text-accent transition-colors"
+                          >
+                            clive@mediahaus.co.za
+                          </a>
+                        </div>
+                        <span className="hidden sm:inline text-muted-foreground">•</span>
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-2">
+                          <p className="text-sm font-semibold text-foreground">Dawid</p>
+                          <a
+                            href="mailto:sales1@mediayhause.co.za"
+                            className="hover:text-accent transition-colors"
+                          >
+                            sales1@mediayhause.co.za
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <Button asChild>
-                      <a href="mailto:clive@mediahaus.co.za">
-                        <Mail className="w-4 h-4 mr-2" />
-                        Send Email
-                      </a>
-                    </Button>
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                      <Button asChild className="flex-1">
+                        <a href="mailto:clive@mediahaus.co.za">
+                          <Mail className="w-4 h-4 mr-2" />
+                          Email Clive
+                        </a>
+                      </Button>
+                      <Button asChild variant="outline" className="flex-1">
+                        <a href="mailto:sales1@mediayhause.co.za">
+                          <Mail className="w-4 h-4 mr-2" />
+                          Email Dawid
+                        </a>
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               </div>

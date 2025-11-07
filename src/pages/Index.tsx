@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import ProductCategories from "@/components/ProductCategories";
 
 const Index = () => {
   return (
@@ -22,6 +23,8 @@ const Index = () => {
             </p>
           </div>
         </section>
+
+        <ProductCategories />
       </main>
       <Footer />
     </div>

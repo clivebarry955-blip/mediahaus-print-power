@@ -56,28 +56,56 @@ const ContactSection = () => {
                 <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a
-                    href="tel:+27824404465"
-                    className="text-sm text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    +27 82 440 4465
-                  </a>
+                  <div className="mt-2 space-y-2 text-sm text-muted-foreground">
+                    <div>
+                      <p className="text-foreground font-semibold">Clive</p>
+                      <a
+                        href="tel:+27824404465"
+                        className="hover:text-accent transition-colors block"
+                      >
+                        +27 82 440 4465
+                      </a>
+                    </div>
+                    <div>
+                      <p className="text-foreground font-semibold">Dawid</p>
+                      <a
+                        href="tel:+27722137792"
+                        className="hover:text-accent transition-colors block"
+                      >
+                        +27 72 213 7792
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a
-                    href="mailto:info@mediahaus.co.za"
-                    className="text-sm text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    info@mediahaus.co.za
-                  </a>
+                  <div className="mt-2 space-y-2 text-sm text-muted-foreground">
+                    <div>
+                      <p className="text-foreground font-semibold">General enquiries</p>
+                      <a
+                        href="mailto:info@mediahaus.co.za"
+                        className="hover:text-accent transition-colors block"
+                      >
+                        info@mediahaus.co.za
+                      </a>
+                    </div>
+                    <div>
+                      <p className="text-foreground font-semibold">Dawid</p>
+                      <a
+                        href="mailto:sales1@mediayhause.co.za"
+                        className="hover:text-accent transition-colors block"
+                      >
+                        sales1@mediayhause.co.za
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <Button asChild className="w-full">
-                <a href="mailto:info@mediahaus.co.za">Send Email</a>
+                <a href="mailto:sales1@mediayhause.co.za">Email Dawid</a>
               </Button>
             </CardContent>
           </Card>
