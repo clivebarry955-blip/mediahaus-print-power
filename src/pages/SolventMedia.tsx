@@ -2,10 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ui/ProductCard";
 import { useLocation } from "react-router-dom";
-import bondPaper from "@/assets/bond-paper.jpg";
+import { inkjetImagePaths } from "@/data/inkjetImagePaths";
 import trisolvePosterPaper from "@/assets/coated-paper-new.jpg";
 import tearResistantSyntheticPaper from "@/assets/coated-paper.jpg";
-import photoPaper from "@/assets/photo-paper-new.jpg";
 import magneticPaper from "@/assets/vinyl-new.jpg";
 import hausMonomericVinyl1Year from "@/assets/vinyl-new.jpg";
 import polymericVinyl from "@/assets/vinyl-new.jpg";
@@ -73,7 +72,7 @@ const SolventMedia = () => {
       name: "Bond Paper",
       description:
         "A standard uncoated 80gsm paper used to print cad drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won’t yellow over time. Fits most large-format printers and engineering copiers.",
-      image: bondPaper,
+      image: inkjetImagePaths.bondPaper,
       specs: [
         { label: "Thickness", value: "80gsm" },
         { label: "Finish", value: "Matt" },
@@ -112,7 +111,7 @@ const SolventMedia = () => {
       name: "Photo Paper",
       description:
         "A very high quality synthetic paper used for photographic reproduction. Scratch and smudge resistant.",
-      image: photoPaper,
+      image: inkjetImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "220gsm" },
         { label: "Finish", value: "Matt and Gloss" },

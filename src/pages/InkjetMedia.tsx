@@ -1,14 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "@/components/ui/ProductCard";
-import bondPaper from "../assets/bond-paper.jpg";
-import coatedPaper from "../assets/coated-paper.jpg";
-import enhancedCoated from "../assets/coated-paper-new.jpg";
-import photoPaper from "../assets/photo-paper-new.jpg";
-import canvas from "../assets/carwrap.jpg";
-import vinylImage from "../assets/vinyl-new.jpg";
+import { inkjetImagePaths } from "@/data/inkjetImagePaths";
 // Using shared ProductCard for consistent layout and full images
-
 
 
 const InkjetMedia = () => {
@@ -17,7 +11,7 @@ const InkjetMedia = () => {
       name: "Bond Paper",
       description:
         "A standard uncoated 80gsm paper used to print cad drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won’t yellow over time. Fits most large-format printers and engineering copiers.",
-      image: bondPaper,
+      image: inkjetImagePaths.bondPaper,
       specs: [
         { label: "Thickness", value: "80gsm" },
         { label: "Finish", value: "Matt" },
@@ -30,7 +24,7 @@ const InkjetMedia = () => {
       name: "Coated Paper",
       description:
         "A matt white coated paper which has a special inkjet coating to allow the ink not to bleed in order to produce very sharp images. For indoor poster use.",
-      image: coatedPaper,
+      image: inkjetImagePaths.coatedPaper,
       specs: [
         { label: "Thickness", value: "90gsm, 125gsm, 180gsm" },
         { label: "Finish", value: "Matt" },
@@ -43,7 +37,7 @@ const InkjetMedia = () => {
       name: "Enhanced Coated Paper",
       description:
         "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
-      image: enhancedCoated,
+      image: inkjetImagePaths.enhancedCoated,
       specs: [
         { label: "Thickness", value: "200gsm" },
         { label: "Finish", value: "Satin / Matt" },
@@ -56,7 +50,7 @@ const InkjetMedia = () => {
       name: "Photo Paper",
       description:
         "A very high quality resin coated paper used for photographic reproduction. Excellent colour gamut, vivid images.",
-      image: photoPaper,
+      image: inkjetImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "190gsm, 260gsm" },
         { label: "Finish", value: "Matt, satin, lustre, gloss" },
@@ -69,7 +63,7 @@ const InkjetMedia = () => {
       name: "Polyester Canvas (Canvas Light)",
       description:
         "A good quality polyester/cotton blended canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
-      image: canvas,
+      image: inkjetImagePaths.canvasLight,
       specs: [
         { label: "Thickness", value: "260gsm" },
         { label: "Finish", value: "Matt" },
@@ -82,7 +76,7 @@ const InkjetMedia = () => {
       name: "Cotton Canvas (Classic Canvas)",
       description:
         "An exceptional quality pure cotton canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
-      image: canvas,
+      image: inkjetImagePaths.canvasClassic,
       specs: [
         { label: "Thickness", value: "350gsm" },
         { label: "Finish", value: "Matt" },
@@ -95,7 +89,7 @@ const InkjetMedia = () => {
       name: "Self-Adhesive Vinyl (Inkjet)",
       description:
         "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
-      image: vinylImage,
+      image: inkjetImagePaths.vinyl,
       specs: [
         { label: "Thickness", value: "100–150 Microns" },
         { label: "Finish", value: "Matt / Gloss" },

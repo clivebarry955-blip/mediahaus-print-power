@@ -3,12 +3,8 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import bondPaper from "@/assets/bond-paper-new.jpg";
-import coatedPaper from "@/assets/coated-paper.jpg";
-import enhancedCoated from "@/assets/coated-paper-new.jpg";
-import photoPaper from "@/assets/photo-paper-new.jpg";
-import canvas from "@/assets/carwrap.jpg";
-import vinylImage from "@/assets/vinyl-new.jpg";
+import { inkjetImagePaths } from "@/data/inkjetImagePaths";
+import solventVinylImage from "@/assets/vinyl-new.jpg";
 import glossVinyl from "@/assets/gloss-vinyl.jpg";
 import castVinyl from "@/assets/cast-vinyl.jpg";
 import blockoutBanner from "@/assets/blockout-banner.jpg";
@@ -25,7 +21,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "A standard uncoated 80gsm paper used to print CAD drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won't yellow over time. Fits most large-format printers and engineering copiers.",
-      image: bondPaper,
+      image: inkjetImagePaths.bondPaper,
       specs: [
         { label: "Thickness", value: "80gsm" },
         { label: "Finish", value: "Matt" },
@@ -39,7 +35,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "A matt white coated paper which has a special inkjet coating to allow the ink not to bleed in order to produce very sharp images. For indoor poster use.",
-      image: coatedPaper,
+      image: inkjetImagePaths.coatedPaper,
       specs: [
         { label: "Thickness", value: "90gsm, 125gsm, 180gsm" },
         { label: "Finish", value: "Matt" },
@@ -53,7 +49,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
-      image: enhancedCoated,
+      image: inkjetImagePaths.enhancedCoated,
       specs: [
         { label: "Thickness", value: "200gsm" },
         { label: "Finish", value: "Satin / Matt" },
@@ -67,7 +63,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "A very high quality resin coated paper used for photographic reproduction. Excellent colour gamut, vivid images.",
-      image: photoPaper,
+      image: inkjetImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "190gsm, 260gsm" },
         { label: "Finish", value: "Matt, satin, lustre, gloss" },
@@ -81,7 +77,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "A good quality polyester/cotton blended canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
-      image: canvas,
+      image: inkjetImagePaths.canvasLight,
       specs: [
         { label: "Thickness", value: "260gsm" },
         { label: "Finish", value: "Matt" },
@@ -95,7 +91,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "An exceptional quality pure cotton canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
-      image: canvas,
+      image: inkjetImagePaths.canvasClassic,
       specs: [
         { label: "Thickness", value: "350gsm" },
         { label: "Finish", value: "Matt" },
@@ -109,7 +105,7 @@ const Products = () => {
       category: "Inkjet Media",
       description:
         "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
-      image: vinylImage,
+      image: inkjetImagePaths.vinyl,
       specs: [
         { label: "Thickness", value: "100-150 Microns" },
         { label: "Finish", value: "Matt / Gloss" },
@@ -122,7 +118,7 @@ const Products = () => {
       name: "Matt Vinyl",
       category: "Solvent Media",
       description: "Durable outdoor vinyl with a matt finish. Perfect for signage and wraps.",
-      image: vinylImage,
+      image: solventVinylImage,
       specs: [
         { label: "Thickness", value: "150 Microns" },
         { label: "Finish", value: "Matt" },
