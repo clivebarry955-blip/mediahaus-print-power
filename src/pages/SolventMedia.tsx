@@ -2,36 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ui/ProductCard";
 import { useLocation } from "react-router-dom";
-import { inkjetImagePaths } from "@/data/inkjetImagePaths";
-import trisolvePosterPaper from "@/assets/coated-paper-new.jpg";
-import tearResistantSyntheticPaper from "@/assets/coated-paper.jpg";
-import magneticPaper from "@/assets/vinyl-new.jpg";
-import hausMonomericVinyl1Year from "@/assets/vinyl-new.jpg";
-import hausMonomericVinyl3Year from "@/assets/vinyl-new.jpg";
-import oraJet3164 from "@/assets/vinyl-new.jpg";
-import hausHighTackVinyl from "@/assets/vinyl-new.jpg";
-import hausPerforatedVinyl from "@/assets/vinyl-new.jpg";
-import hausFrostedVinyl from "@/assets/vinyl-new.jpg";
-import hausEezidotVinyl from "@/assets/vinyl-new.jpg";
-import hausReflectiveVinyl from "@/assets/vinyl-new.jpg";
-import averyReflectiveVinyl from "@/assets/vinyl-new.jpg";
-import haus5YearVinyl from "@/assets/vinyl-new.jpg";
-import oraJetPolymericVinyl from "@/assets/vinyl-new.jpg";
-import averyWallVinylMP2611 from "@/assets/vinyl-new.jpg";
-import averyMPI1105 from "@/assets/carwrap.jpg"; 
-import mactacCastVinylJT10700 from "@/assets/mactac Cast Vinyl JT 10700.jpg";
-import blockoutPVC from "@/assets/blockout-banner.jpg";
-import rollUpPVC from "@/assets/vinyl-new.jpg";
-import backlitPVC from "@/assets/indoor-lamination.jpg";
-import meshWithLiner from "@/assets/vinyl-new.jpg";
-import tShirtTransferVinyl from "@/assets/prod-dtg.jpg";
-import backlitFilm from "@/assets/indoor-lamination.jpg";
-import hausPolyesterCanvas from "@/assets/hero-rolls.jpg";
-import hausCottonCanvas from "@/assets/hero-rolls.jpg";
-import picassoCanvas from "@/assets/hero-rolls.jpg";  
-import muramourSableWallpaper from "@/assets/muramourSableWallpaper.jpg";
-import muraspecGraphiteWallpaper from "@/assets/muraspec Graphite Wallpaper.jpeg";
-import TexSelfAdhesiveWallpaper from "@/assets/TexSelfAdhesiveWallpaper.jpeg";  
+import { solventImagePaths } from "@/data/solventImagePaths";
 
 const SolventMedia = () => {
   // Sub-categories for Solvent Media
@@ -70,7 +41,7 @@ const SolventMedia = () => {
       name: "Bond Paper",
       description:
         "A standard uncoated 80gsm paper used to print cad drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won’t yellow over time. Fits most large-format printers and engineering copiers.",
-      image: inkjetImagePaths.bondPaper,
+      image: solventImagePaths.bondPaper,
       specs: [
         { label: "Thickness", value: "80gsm" },
         { label: "Finish", value: "Matt" },
@@ -83,7 +54,7 @@ const SolventMedia = () => {
       name: "Trisolve Poster Paper",
       description:
         "A multi-coated, weatherproof poster paper with high wet-strength and a glossy satin finish. This poster paper impresses with high colour brilliance and very good image definition. The material dries quickly even with high ink densities and does not cockle easily.",
-      image: trisolvePosterPaper,
+      image: solventImagePaths.trisolvePosterPaper,
       specs: [
         { label: "Thickness", value: "135gsm, 200gsm" },
         { label: "Finish", value: "Satin" },
@@ -96,7 +67,7 @@ const SolventMedia = () => {
       name: "Tear-resistant Synthetic Paper",
       description:
         "A synthetic tear-proof paper used for poster printing, point of sale, pull-up banners, scrolling banners. Scratch and smudge resistant.",
-      image: tearResistantSyntheticPaper,
+      image: solventImagePaths.tearResistantSyntheticPaper,
       specs: [
         { label: "Thickness", value: "135gsm" },
         { label: "Finish", value: "Satin" },
@@ -109,7 +80,7 @@ const SolventMedia = () => {
       name: "Photo Paper",
       description:
         "A very high quality synthetic paper used for photographic reproduction. Scratch and smudge resistant.",
-      image: inkjetImagePaths.photoPaper,
+      image: solventImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "220gsm" },
         { label: "Finish", value: "Matt and Gloss" },
@@ -122,7 +93,7 @@ const SolventMedia = () => {
       name: "Magnetic Paper (Promo Steel)",
       description:
         "Promo Steel is a digitally printable paper with an iron/ferrous coating that can be applied directly to magnetic substrates. This product is used for retail advertising, allowing you to replace the graphic with ease.",
-      image: magneticPaper,
+      image: solventImagePaths.magneticPaper,
       specs: [
         { label: "Thickness", value: "—" },
         { label: "Finish", value: "Satin" },
@@ -134,7 +105,7 @@ const SolventMedia = () => {
     {
       name: "Haus Monomeric Vinyl 1 Year",
       description: "Durable monomeric vinyl suitable for short-term outdoor use. Ideal for vehicle graphics and signage.",
-      image: hausMonomericVinyl1Year,
+      image: solventImagePaths.hausMonomericVinyl1Year,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "1 Year Outdoor" },
@@ -149,7 +120,7 @@ const SolventMedia = () => {
     {
       name: "Haus Monomeric Vinyl 3 Year",
       description: "Enhanced monomeric vinyl with extended durability for outdoor use. Ideal for high-traffic areas.",
-      image: hausMonomericVinyl3Year,
+      image: solventImagePaths.hausMonomericVinyl3Year,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3 Years Outdoor" },
@@ -164,7 +135,7 @@ const SolventMedia = () => {
     {
       name: "Orajet 3164 Monomeric Vinyl 4 Year",
       description: "Premium monomeric vinyl with excellent print quality and durability for outdoor applications.",
-      image: oraJet3164,
+      image: solventImagePaths.oraJet3164,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "4 Years Outdoor" },
@@ -179,7 +150,7 @@ const SolventMedia = () => {
     {
       name: "Haus High Tack Vinyl",
       description: "High-tack adhesive vinyl designed for challenging surfaces and irregular shapes.",
-      image: hausHighTackVinyl,
+      image: solventImagePaths.hausHighTackVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Outdoor" },
@@ -194,7 +165,7 @@ const SolventMedia = () => {
     {
       name: "Haus Perforated Vinyl",
       description: "Perforated vinyl for window graphics, allowing visibility from inside while displaying ads outside.",
-      image: hausPerforatedVinyl,
+      image: solventImagePaths.hausPerforatedVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Outdoor" },
@@ -209,7 +180,7 @@ const SolventMedia = () => {
     {
       name: "Haus Frosted Vinyl",
       description: "Frosted vinyl providing privacy while maintaining light transmission. Ideal for glass surfaces.",
-      image: hausFrostedVinyl,
+      image: solventImagePaths.hausFrostedVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Indoor" },
@@ -224,7 +195,7 @@ const SolventMedia = () => {
     {
       name: "Haus Eezidot Vinyl",
       description: "Easy-to-use vinyl with a dot pattern adhesive layer for bubble-free application.",
-      image: hausEezidotVinyl,
+      image: solventImagePaths.hausEezidotVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Outdoor" },
@@ -239,7 +210,7 @@ const SolventMedia = () => {
     {
       name: "Haus Reflective Vinyl",
       description: "Reflective vinyl enhancing visibility during nighttime. Ideal for safety and promotional graphics.",
-      image: hausReflectiveVinyl,
+      image: solventImagePaths.hausReflectiveVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Outdoor" },
@@ -254,7 +225,7 @@ const SolventMedia = () => {
     {
       name: "Avery Reflective Vinyl",
       description: "High-quality reflective vinyl from Avery, offering enhanced night-time visibility.",
-      image: averyReflectiveVinyl,
+      image: solventImagePaths.averyReflectiveVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "5 Years Outdoor" },
@@ -269,7 +240,7 @@ const SolventMedia = () => {
     {
       name: "Haus 5 Year Polymeric Vinyl",
       description: "Premium vinyl offering 5 years of outdoor durability. Suitable for long-term branding and signage.",
-      image: haus5YearVinyl,
+      image: solventImagePaths.haus5YearPolymericVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "5 Years Outdoor" },
@@ -284,7 +255,7 @@ const SolventMedia = () => {
     {
       name: "Orajet Polymeric Vinyl 3165/3651RA 5 Year",
       description: "High-performance polymeric vinyl with extended outdoor durability. Ideal for long-term applications.",
-      image: oraJetPolymericVinyl,
+      image: solventImagePaths.oraJetPolymericVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "5 Years Outdoor" },
@@ -299,7 +270,7 @@ const SolventMedia = () => {
     {
       name: "Avery Wall Vinyl MP!2611",
       description: "Removable wall vinyl suitable for indoor use. Easy to apply and remove without residue.",
-      image: averyWallVinylMP2611,
+      image: solventImagePaths.averyWallVinylMp2611,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Indoor" },
@@ -314,7 +285,7 @@ const SolventMedia = () => {
     {
       name: "Avery MPI1105 (7-10 Year)",
       description: "Ultra-durable cast vinyl with up to 10 years of outdoor durability. Ideal for vehicle wraps and long-term branding.",
-      image: averyMPI1105,
+      image: solventImagePaths.averyMPI1105,
       specs: [
         { label: "Thickness", value: "80 Microns" },
         { label: "Durability", value: "7-10 Years Outdoor" },
@@ -329,7 +300,7 @@ const SolventMedia = () => {
     {
       name: "Mactac Cast Vinyl JT10700 (7 Year)",
       description: "High-quality cast vinyl from Mactac, offering superior conformability and 7 years of outdoor durability.",
-      image: mactacCastVinylJT10700,
+      image: solventImagePaths.mactacCastVinylJT10700,
       specs: [
         { label: "Thickness", value: "80 Microns" },
         { label: "Durability", value: "7 Years Outdoor" },
@@ -345,7 +316,7 @@ const SolventMedia = () => {
       name: "Blockout PVC",
       description:
         "A high-strength laminated flex (1000 x 1000 DIN) designed for outdoor use for billboards and banners. The black back gives 100% opacity so if the sun shines from behind, it does not interfere with the image printed on it.",
-      image: blockoutPVC,
+      image: solventImagePaths.blockoutPVC,
       specs: [
         { label: "Thickness", value: "510 gsm" },
         { label: "Finish", value: "Matt" },
@@ -360,7 +331,7 @@ const SolventMedia = () => {
       name: "Roll-up PVC (Layflat)",
       description:
         "A scrimless non-curl frontlit PVC banner ideally used for roll-ups and X-banners. The PVC has a scrimless smooth appearance.",
-      image: rollUpPVC,
+      image: solventImagePaths.rollUpPVC,
       specs: [
         { label: "Thickness", value: "510 gsm" },
         { label: "Finish", value: "Satin" },
@@ -375,7 +346,7 @@ const SolventMedia = () => {
       name: "Backlit PVC",
       description:
         "This backlit PVC is re-inforced and designed to be translucent so that when light shines through from behind, the design lights up. Generally used in lightboxes and backlit billboards that get viewed from a distance. Weather resistant with good light transmission.",
-      image: backlitPVC,
+      image: solventImagePaths.backlitPVC,
       specs: [
         { label: "Thickness", value: "500 gsm" },
         { label: "Finish", value: "Satin" },
@@ -390,7 +361,7 @@ const SolventMedia = () => {
       name: "Mesh with Liner",
       description:
         "A lightweight PVC mesh used for banners and other graphics applications and which allows air and sound to pass through. Ideal for high-wind applications. Can be used for building wraps, event graphics, fence banners and even indoor blinds as it is partially see-through.",
-      image: meshWithLiner,
+      image: solventImagePaths.meshWithLiner,
       specs: [
         { label: "Thickness", value: "270 gsm" },
         { label: "Finish", value: "Matt" },
@@ -404,7 +375,7 @@ const SolventMedia = () => {
     {
       name: "T-Shirt Transfer Vinyl",
       description: "Flexible vinyl designed for heat transfer onto t-shirts and fabrics. Durable and wash-resistant.",
-      image: tShirtTransferVinyl,
+      image: solventImagePaths.tShirtTransferVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "50+ Washes" },
@@ -419,7 +390,7 @@ const SolventMedia = () => {
     {
       name: "Backlit Film",
       description: "Translucent film designed for backlit applications such as lightboxes. Provides vibrant prints when illuminated.",
-      image: backlitFilm,
+      image: solventImagePaths.backlitFilm,
       specs: [
         { label: "Thickness", value: "175 Microns" },
         { label: "Durability", value: "3-5 Years Indoor" },
@@ -434,7 +405,7 @@ const SolventMedia = () => {
     {
       name: "Haus Polyester Canvas",
       description: "Durable polyester canvas suitable for indoor and outdoor use. Resists tearing and water damage.",
-      image: hausPolyesterCanvas,
+      image: solventImagePaths.hausPolyesterCanvas,
       specs: [
         { label: "Thickness", value: "400gsm" },
         { label: "Durability", value: "3-5 Years Outdoor" },
@@ -449,7 +420,7 @@ const SolventMedia = () => {
     {
       name: "Haus Cotton Canvas",
       description: "Premium cotton canvas offering a natural texture. Ideal for fine art reproduction and high-end prints.",
-      image: hausCottonCanvas,
+      image: solventImagePaths.hausCottonCanvas,
       specs: [
         { label: "Thickness", value: "410gsm" },
         { label: "Durability", value: "Indoor Use Only" },
@@ -464,7 +435,7 @@ const SolventMedia = () => {
     {
       name: "Picasso Canvas",
       description: "High-quality canvas material with excellent color reproduction. Suitable for professional artists and photographers.",
-      image: picassoCanvas,
+      image: solventImagePaths.picassoCanvas,
       specs: [
         { label: "Thickness", value: "420gsm" },
         { label: "Durability", value: "Indoor Use Only" },
@@ -479,7 +450,7 @@ const SolventMedia = () => {
     {
       name: "Muramour Sable Wallpaper",
       description: "Luxury wallpaper with a textured finish. Ideal for interior design projects.",
-      image: muramourSableWallpaper,
+      image: solventImagePaths.muramourSableWallpaper,
       specs: [
         { label: "Thickness", value: "280gsm" },
         { label: "Durability", value: "Indoor Use Only" },
@@ -494,7 +465,7 @@ const SolventMedia = () => {
     {
       name: "Muraspec Graphite Wallpaper",
       description: "Modern graphite-textured wallpaper for contemporary interiors. Easy to apply and remove.",
-      image: muraspecGraphiteWallpaper,
+      image: solventImagePaths.muraspecGraphiteWallpaper,
       specs: [
         { label: "Thickness", value: "250gsm" },
         { label: "Durability", value: "Indoor Use Only" },
@@ -509,7 +480,7 @@ const SolventMedia = () => {
     {
       name: "GV Tex Self-adhesive Wallpaper",
       description: "Self-adhesive wallpaper with easy application and removal. Suitable for temporary and permanent installations.",
-      image: TexSelfAdhesiveWallpaper,
+      image: solventImagePaths.texSelfAdhesiveWallpaper,
       specs: [
         { label: "Thickness", value: "220gsm" },
         { label: "Durability", value: "Indoor Use Only" },
