@@ -31,6 +31,12 @@ const withBaseUrl = (relativePath: string) => {
 const solventMediaBasePath = withBaseUrl(
   "02 Solvent-UV-Latex Media-20251113T113043Z-1-001/02 Solvent-UV-Latex Media"
 );
+const reflectiveVinylBasePath = withBaseUrl(
+  "09 Reflective Vinyl-20251113T135627Z-1-001/09 Reflective Vinyl"
+);
+const averyWallVinylBasePath = withBaseUrl(
+  "Avery wall vinyl-20251113T135700Z-1-001 (3)/Avery wall vinyl"
+);
 
 export const solventImagePaths = {
   bondPaper: `${solventMediaBasePath}/01 Paper/01 Bond Paper/Bond paper 1.jpg`,
@@ -45,11 +51,11 @@ export const solventImagePaths = {
   hausPerforatedVinyl: `${solventMediaBasePath}/02 Vinyls/04 Haus Perforated Vinyl/BPW7054-4.jpg`,
   hausFrostedVinyl: `${solventMediaBasePath}/02 Vinyls/05 Haus Frosted Vinyl/01 Frosted Vinyl Sample USE.jpg`,
   hausEezidotVinyl: `${solventMediaBasePath}/02 Vinyls/06 Haus Eezidot Vinyl/01 Easydot4 USE.jpg`,
-  hausReflectiveVinyl: `${solventMediaBasePath}/02 Vinyls/07 Polymeric Vinyl/Haus Polymeric/Haus Polymeric.jpg`,
-  averyReflectiveVinyl: `${solventMediaBasePath}/02 Vinyls/08 CAST Vinyl/Avery/MPI-1105-Speedmaster-Key-Visual-5-515Wx515H.jpg`,
+  hausReflectiveVinyl: `${reflectiveVinylBasePath}/Haus Reflective/01 Haus Reflective White Printable.jpg`,
+  averyReflectiveVinyl: `${reflectiveVinylBasePath}/Avery Reflective/retro-vinyl-printing.jpg`,
   haus5YearPolymericVinyl: `${solventMediaBasePath}/02 Vinyls/07 Polymeric Vinyl/Haus Polymeric/Haus Polymeric.jpg`,
   oraJetPolymericVinyl: `${solventMediaBasePath}/02 Vinyls/07 Polymeric Vinyl/Orajet Polymeric/OraJet_3740_PVC_Free_35b6107c-42a7-447d-a1ea-1940d2ba6c92_grande.webp`,
-  averyWallVinylMp2611: `${solventMediaBasePath}/02 Vinyls/08 CAST Vinyl/Avery/MPI-1105-Speedmaster-Key-Visual-5-515Wx515H.jpg`,
+  averyWallVinylMp2611: `${averyWallVinylBasePath}/1502908461973.jpg`,
   averyMPI1105: `${solventMediaBasePath}/02 Vinyls/08 CAST Vinyl/Avery/MPI-1105-Speedmaster-Key-Visual-5-515Wx515H.jpg`,
   mactacCastVinylJT10700: `${solventMediaBasePath}/02 Vinyls/08 CAST Vinyl/Mactac/cq5dam.web.1280.1280.jpeg`,
   blockoutPVC: `${solventMediaBasePath}/03 PVC/01 Block-out PVC Gloss & Matt/blockout-pvc.jpg`,
