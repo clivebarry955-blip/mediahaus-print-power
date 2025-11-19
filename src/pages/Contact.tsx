@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Text from "@/components/Text";
 
 const Contact = () => {
   return (
@@ -16,10 +17,8 @@ const Contact = () => {
         <section className="bg-gradient-to-b from-secondary/30 to-background py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-              <p className="text-lg text-muted-foreground">
-                Get in touch with our team. We're here to help with your printing media needs.
-              </p>
+              <Text as="h1" id="contact.hero.title" className="text-4xl md:text-5xl font-heading font-semibold mb-4" />
+              <Text as="p" id="contact.hero.body" className="text-lg text-muted-foreground" />
             </div>
           </div>
         </section>

@@ -1,35 +1,40 @@
 import { Button } from "../components/ui/button";
-import { CheckCircle2 } from "lucide-react";
+import Text from "@/components/Text";
+import SmartImage from "@/components/SmartImage";
+import { useCopy } from "@/hooks/useCopy";
+import { useSiteConfig } from "@/hooks/useSiteConfig";
 
 const Hero = () => {
+  const { t } = useCopy();
+  const site = useSiteConfig();
+
   return (
     <section className="container mx-auto px-4 py-12 md:py-20">
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            More than 25 years of experience in the graphics industry
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground">
-            Mediahaus has over 25 years of expertise in the graphics industry, providing high-quality printing solutions to meet your needs.
-          </p>
+          <Text
+            as="h1"
+            id="hero.title"
+            className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold leading-tight text-balance"
+          />
+          <Text as="p" id="hero.subtitle" className="text-lg md:text-xl text-muted-foreground" />
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <Button size="lg" asChild>
-              <a href="#products">Explore Our Products</a>
+            <Button size="lg" asChild className="font-semibold font-primary">
+              <a href="#products">{t("hero.primaryCta")}</a>
             </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="/contact">Request Quote</a>
+            <Button size="lg" variant="outline" asChild className="font-semibold font-primary">
+              <a href="/contact">{t("hero.secondaryCta")}</a>
             </Button>
           </div>
-
         </div>
 
         <div className="relative">
           <div className="relative rounded-lg overflow-hidden shadow-lg">
-            <img
-              src="/barry clive.jpg"
-              alt="Custom vinyl car wrap showcasing vibrant multicolor design"
-              className="w-full h-auto"
+            <SmartImage
+              id={site.media.hero}
+              className="w-full h-auto object-cover"
+              alt={t("media.hero.alt", "Production team at work")}
             />
           </div>
           <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-cyan to-magenta opacity-20 rounded-full blur-3xl"></div>

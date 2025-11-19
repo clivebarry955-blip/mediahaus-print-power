@@ -22,7 +22,7 @@ const resolveBasePath = () => {
 
 const basePath = resolveBasePath();
 
-const withBaseUrl = (relativePath: string) => {
+export const withBaseUrl = (relativePath: string) => {
   const normalizedRelative = trimLeadingSlash(relativePath);
   const prefix = basePath === "" ? "/" : `${basePath}/`;
   return `${prefix}${normalizedRelative}`.replace(/\/{2,}/g, "/");
@@ -36,6 +36,9 @@ const reflectiveVinylBasePath = withBaseUrl(
 );
 const averyWallVinylBasePath = withBaseUrl(
   "Avery wall vinyl-20251113T135700Z-1-001 (3)/Avery wall vinyl"
+);
+const picassoCanvasBasePath = withBaseUrl(
+  "03 Picasso Canvas-20251119T195126Z-1-001/03 Picasso Canvas"
 );
 
 export const solventImagePaths = {
@@ -66,7 +69,7 @@ export const solventImagePaths = {
   backlitFilm: `${solventMediaBasePath}/03 PVC/03 Backlit PVC/Backlit PVC.webp`,
   hausPolyesterCanvas: `${solventMediaBasePath}/04 Canvas & Wall/01 Polyester Canvas Lite/01 Polyester Canvas 260gsm.jpg`,
   hausCottonCanvas: `${solventMediaBasePath}/04 Canvas & Wall/02 Cotton Canvas/01 Cotton Canvas 350gsm.jpg`,
-  picassoCanvas: `${solventMediaBasePath}/04 Canvas & Wall/03 Wallpaper Muramour/01 Muramour LIN.jpg`,
+  picassoCanvas: `${picassoCanvasBasePath}/01 Picasso Canvas 370gsm.jpg`,
   muramourSableWallpaper: `${solventMediaBasePath}/04 Canvas & Wall/03 Wallpaper Muramour/01 Muramour SABLE.jpg`,
   muraspecGraphiteWallpaper: `${solventMediaBasePath}/04 Canvas & Wall/04 Wallpaper Muraspec Graphite/01 Digiwall Sandstone.jpg`,
   texSelfAdhesiveWallpaper: `${solventMediaBasePath}/04 Canvas & Wall/05 Wallpaper GVTEX Self-adhesive/00 GVTex Self-Adhesive.jpg`,

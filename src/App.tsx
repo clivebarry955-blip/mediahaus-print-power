@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import { Toaster } from "./components/ui/toaster";
 import { Toaster as Sonner } from "./components/ui/sonner";
 import { TooltipProvider } from "./components/ui/tooltip";
@@ -12,12 +13,16 @@ import SolventMedia from "./pages/SolventMedia";
 import DTGFilms from "./pages/DTGFilms";
 import FinishingFilms from "./pages/FinishingFilms";
 import { InkjetMedia } from "./pages/InkjetMedia";
+import FontsManager from "./components/FontsManager";
+
+const AdminPage = lazy(() => import("./pages/Admin"));
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="mediahaus-theme">
+      <FontsManager />
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -30,6 +35,14 @@ const App = () => (
           <Route path="/solvent-media" element={<SolventMedia />} />
           <Route path="/dtg-films" element={<DTGFilms />} />
           <Route path="/finishing-films" element={<FinishingFilms />} />
+          <Route
+            path="/admin"
+            element={
+              <Suspense fallback={<div className="p-10 text-center">Loading admin…</div>}>
+                <AdminPage />
+              </Suspense>
+            }
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
           </Routes>

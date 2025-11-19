@@ -1,0 +1,275 @@
+{
+  "categories": [
+    {
+      "id": "inkjet",
+      "name": "Inkjet Media",
+      "description": "Indoor papers and films for high quality prints"
+    },
+    {
+      "id": "solvent",
+      "name": "Solvent Media",
+      "description": "Durable outdoor vinyl for signage and wraps"
+    },
+    {
+      "id": "dtf",
+      "name": "DTF Media",
+      "description": "Direct-to-Film transfer products"
+    },
+    {
+      "id": "finishing",
+      "name": "Finishing Films",
+      "description": "Lamination and mounting solutions"
+    }
+  ],
+  "products": [
+    {
+      "id": "bond-paper",
+      "categoryId": "inkjet",
+      "name": "Bond Paper",
+      "description": "A standard uncoated 80gsm paper used to print CAD drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won't yellow over time. Fits most large-format printers and engineering copiers.",
+      "imageId": "products.inkjet.bond-paper",
+      "specs": [
+        { "label": "Thickness", "value": "80gsm" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "294mm, 420mm, 594mm, 610mm, 841mm, 914mm, 1118mm, 1270mm, 1370mm, 1524mm" },
+        { "label": "Length", "value": "50m, 100m, 150m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Solvent, Eco-solvent, Latex and UV" }
+      ]
+    },
+    {
+      "id": "coated-paper",
+      "categoryId": "inkjet",
+      "name": "Coated Paper",
+      "description": "A matt white coated paper which has a special inkjet coating to allow the ink not to bleed in order to produce very sharp images. For indoor poster use.",
+      "imageId": "products.inkjet.coated-paper",
+      "specs": [
+        { "label": "Thickness", "value": "90gsm, 125gsm, 180gsm" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1118mm" },
+        { "label": "Length", "value": "30m, 45m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "enhanced-coated-paper",
+      "categoryId": "inkjet",
+      "name": "Enhanced Coated Paper",
+      "description": "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
+      "imageId": "products.inkjet.enhanced-coated-paper",
+      "specs": [
+        { "label": "Thickness", "value": "200gsm" },
+        { "label": "Finish", "value": "Satin / Matt" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1118mm" },
+        { "label": "Length", "value": "30m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "photo-paper",
+      "categoryId": "inkjet",
+      "name": "Photo Paper",
+      "description": "A very high quality resin coated paper used for photographic reproduction. Excellent colour gamut, vivid images.",
+      "imageId": "products.inkjet.photo-paper",
+      "specs": [
+        { "label": "Thickness", "value": "190gsm, 260gsm" },
+        { "label": "Finish", "value": "Matt, satin, lustre, gloss" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1118mm" },
+        { "label": "Length", "value": "30m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "canvas-light",
+      "categoryId": "inkjet",
+      "name": "Polyester Canvas (Canvas Light)",
+      "description": "A good quality polyester/cotton blended canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
+      "imageId": "products.inkjet.canvas-light",
+      "specs": [
+        { "label": "Thickness", "value": "260gsm" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "432mm, 610mm, 914mm, 1118mm, 1524mm" },
+        { "label": "Length", "value": "18m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "canvas-classic",
+      "categoryId": "inkjet",
+      "name": "Cotton Canvas (Classic Canvas)",
+      "description": "An exceptional quality pure cotton canvas with an inkjet coating. Used to print photographic and art reproductions. Can be stretched over a frame without the edges cracking.",
+      "imageId": "products.inkjet.canvas-classic",
+      "specs": [
+        { "label": "Thickness", "value": "350gsm" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "432mm, 610mm, 914mm, 1118mm, 1524mm" },
+        { "label": "Length", "value": "18m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "self-adhesive-vinyl",
+      "categoryId": "inkjet",
+      "name": "Self-Adhesive Vinyl (Inkjet)",
+      "description": "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
+      "imageId": "products.inkjet.self-adhesive-vinyl",
+      "specs": [
+        { "label": "Thickness", "value": "100-150 Microns" },
+        { "label": "Finish", "value": "Matt / Gloss" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1370mm, 1520mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Printer Compatibility", "value": "Inkjet, Latex and UV" }
+      ]
+    },
+    {
+      "id": "matt-vinyl",
+      "categoryId": "solvent",
+      "name": "Matt Vinyl",
+      "description": "Durable outdoor vinyl with a matt finish. Perfect for signage and wraps.",
+      "imageId": "products.solvent.matt-vinyl",
+      "specs": [
+        { "label": "Thickness", "value": "150 Microns" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1370mm, 1520mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Printer Compatibility", "value": "Solvent, Eco-solvent, Latex, UV" }
+      ]
+    },
+    {
+      "id": "gloss-vinyl",
+      "categoryId": "solvent",
+      "name": "Gloss Vinyl",
+      "description": "High-gloss outdoor vinyl for vibrant signage and vehicle wraps.",
+      "imageId": "products.solvent.gloss-vinyl",
+      "specs": [
+        { "label": "Thickness", "value": "150 Microns" },
+        { "label": "Finish", "value": "Gloss" },
+        { "label": "Available Sizes", "value": "610mm, 914mm, 1370mm, 1520mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Printer Compatibility", "value": "Solvent, Eco-solvent, Latex, UV" }
+      ]
+    },
+    {
+      "id": "cast-vinyl",
+      "categoryId": "solvent",
+      "name": "Cast Vinyl",
+      "description": "Premium cast vinyl for vehicle wraps and complex curved surfaces.",
+      "imageId": "products.solvent.cast-vinyl",
+      "specs": [
+        { "label": "Thickness", "value": "80 Microns" },
+        { "label": "Finish", "value": "Gloss" },
+        { "label": "Available Sizes", "value": "1370mm, 1520mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Printer Compatibility", "value": "Solvent, Eco-solvent, Latex, UV" }
+      ]
+    },
+    {
+      "id": "blockout-pvc",
+      "categoryId": "solvent",
+      "name": "Blockout PVC",
+      "description": "A high-strength laminated flex (1000 x 1000 DIN) designed for outdoor use for billboards and banners. The black back gives 100% opacity so if the sun shines from behind, it does not interfere with the image printed on it.",
+      "imageId": "products.solvent.blockout-pvc",
+      "specs": [
+        { "label": "Thickness", "value": "510 gsm" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "1370mm, 1600mm, 3200mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Printer Compatibility", "value": "Solvent, Eco-solvent, Latex, UV" }
+      ]
+    },
+    {
+      "id": "dtf-film",
+      "categoryId": "dtf",
+      "name": "DTF Film",
+      "description": "Direct-to-Film transfer film for garment printing. No weeding required.",
+      "imageId": "products.dtf.film",
+      "specs": [
+        { "label": "Thickness", "value": "75 Microns" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "300mm, 400mm, 600mm" },
+        { "label": "Length", "value": "100m" },
+        { "label": "Printer Compatibility", "value": "DTF Printers" }
+      ]
+    },
+    {
+      "id": "dtf-powder",
+      "categoryId": "dtf",
+      "name": "DTF Powder",
+      "description": "Hot-melt adhesive powder for DTF transfers. Creates durable bond with fabrics.",
+      "imageId": "products.dtf.powder",
+      "specs": [
+        { "label": "Particle Size", "value": "80-120 mesh" },
+        { "label": "Melting Point", "value": "110-120°C" },
+        { "label": "Package Size", "value": "1kg, 5kg, 10kg" },
+        { "label": "Application", "value": "All fabric types" }
+      ]
+    },
+    {
+      "id": "gloss-lamination",
+      "categoryId": "finishing",
+      "name": "Gloss Lamination",
+      "description": "Crystal clear gloss laminate for print protection and enhancement. UV resistant with excellent clarity.",
+      "imageId": "products.finishing.gloss-lamination",
+      "specs": [
+        { "label": "Thickness", "value": "75 Microns, 100 Microns" },
+        { "label": "Finish", "value": "Gloss" },
+        { "label": "Available Sizes", "value": "1370mm, 1520mm" },
+        { "label": "Length", "value": "50m, 100m" },
+        { "label": "Application", "value": "Cold lamination" }
+      ]
+    },
+    {
+      "id": "matt-lamination",
+      "categoryId": "finishing",
+      "name": "Matt Lamination",
+      "description": "Anti-glare matt laminate for professional finish without reflections. Perfect for indoor displays and posters.",
+      "imageId": "products.finishing.matt-lamination",
+      "specs": [
+        { "label": "Thickness", "value": "75 Microns, 100 Microns" },
+        { "label": "Finish", "value": "Matt" },
+        { "label": "Available Sizes", "value": "1370mm, 1520mm" },
+        { "label": "Length", "value": "50m, 100m" },
+        { "label": "Application", "value": "Cold lamination" }
+      ]
+    },
+    {
+      "id": "mounting-adhesive",
+      "categoryId": "finishing",
+      "name": "Mounting Adhesive",
+      "description": "Double-sided adhesive film for mounting prints to rigid substrates.",
+      "imageId": "products.finishing.mounting-adhesive",
+      "specs": [
+        { "label": "Thickness", "value": "100 Microns" },
+        { "label": "Adhesive Type", "value": "Permanent" },
+        { "label": "Available Sizes", "value": "1370mm, 1520mm" },
+        { "label": "Length", "value": "50m" },
+        { "label": "Application", "value": "Foamboard, PVC, Aluminium" }
+      ]
+    },
+    {
+      "id": "double-sided-mounting",
+      "categoryId": "finishing",
+      "name": "Double-sided Mounting Film",
+      "description": "A clear polyester mounting film, coated on both sides with a permanent pressure sensitive acrylic adhesive, one of which is protected by a Kraft siliconized release liner and one side a film release liner. The perfect product for the mounting of graphics onto various substrates such as correx etc.",
+      "imageId": "products.finishing.double-sided-mounting",
+      "specs": [
+        { "label": "Thickness", "value": "45 Micron" },
+        { "label": "Finish", "value": "N/A" },
+        { "label": "Available Sizes", "value": "1040mm, 1270mm" },
+        { "label": "Length", "value": "33m" }
+      ]
+    },
+    {
+      "id": "optically-clear-mounting",
+      "categoryId": "finishing",
+      "name": "Optically Clear Double-sided Mounting Film",
+      "description": "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
+      "imageId": "products.finishing.optically-clear-mounting",
+      "specs": [
+        { "label": "Thickness", "value": "25 Micron" },
+        { "label": "Finish", "value": "N/A" },
+        { "label": "Available Sizes", "value": "1300mm" },
+        { "label": "Length", "value": "25m, 50m" }
+      ]
+    }
+  ]
+}

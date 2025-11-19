@@ -1,0 +1,94 @@
+{
+  "brand": {
+    "name": "Mediahaus Print Power",
+    "taglineKey": "brand.tagline"
+  },
+  "fonts": {
+    "primary": {
+      "name": "Inter",
+      "stack": "\"Inter\", \"Inter var\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "importUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    },
+    "secondary": {
+      "name": "EB Garamond",
+      "stack": "\"EB Garamond\", Georgia, 'Times New Roman', serif",
+      "importUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap"
+    }
+  },
+  "fontSizes": {
+    "basePx": 16,
+    "headingScale": 1.22,
+    "bodyScale": 1
+  },
+  "theme": {
+    "radius": 0.5,
+    "colors": {
+      "background": "0 0% 98%",
+      "foreground": "0 0% 10%",
+      "card": "0 0% 100%",
+      "card-foreground": "0 0% 10%",
+      "popover": "0 0% 100%",
+      "popover-foreground": "0 0% 10%",
+      "primary": "0 0% 0%",
+      "primary-foreground": "0 0% 100%",
+      "secondary": "0 0% 96%",
+      "secondary-foreground": "0 0% 10%",
+      "muted": "0 0% 95%",
+      "muted-foreground": "0 0% 45%",
+      "accent": "195 100% 44%",
+      "accent-foreground": "0 0% 100%",
+      "destructive": "0 84% 60%",
+      "destructive-foreground": "0 0% 100%",
+      "border": "0 0% 90%",
+      "input": "0 0% 90%",
+      "ring": "195 100% 44%",
+      "cyan": "195 100% 44%",
+      "magenta": "328 100% 45%",
+      "yellow": "51 100% 50%",
+      "cmyk-black": "0 0% 0%",
+      "sidebar-background": "0 0% 98%",
+      "sidebar-foreground": "240 5.3% 26.1%",
+      "sidebar-primary": "240 5.9% 10%",
+      "sidebar-primary-foreground": "0 0% 98%",
+      "sidebar-accent": "240 4.8% 95.9%",
+      "sidebar-accent-foreground": "240 5.9% 10%",
+      "sidebar-border": "220 13% 91%",
+      "sidebar-ring": "217.2 91.2% 59.8%"
+    }
+  },
+  "media": {
+    "logoLight": "brand.logo.light",
+    "logoDark": "brand.logo.dark",
+    "hero": "hero.primary",
+    "cta": "cta.support",
+    "testimonial": "testimonials.vivid",
+    "feature": "features.press"
+  },
+  "navigation": {
+    "primary": [
+      { "id": "home", "href": "/", "labelKey": "nav.home" },
+      { "id": "products", "href": "/products", "labelKey": "nav.products" },
+      { "id": "inkjet", "href": "/inkjet-media", "labelKey": "nav.inkjet" },
+      { "id": "solvent", "href": "/solvent-media", "labelKey": "nav.solvent", "children": [
+        { "id": "solvent.pvc", "href": "/solvent-media#pvc", "labelKey": "nav.solvent.pvc" },
+        { "id": "solvent.paper", "href": "/solvent-media#paper", "labelKey": "nav.solvent.paper" },
+        { "id": "solvent.vinyl", "href": "/solvent-media#vinyl", "labelKey": "nav.solvent.vinyl" },
+        { "id": "solvent.wallpaper", "href": "/solvent-media#wallpaper", "labelKey": "nav.solvent.wallpaper" },
+        { "id": "solvent.other", "href": "/solvent-media#other", "labelKey": "nav.solvent.other" }
+      ] },
+      { "id": "dtf", "href": "/dtg-films", "labelKey": "nav.dtf" },
+      { "id": "finishing", "href": "/finishing-films", "labelKey": "nav.finishing" },
+      { "id": "contact", "href": "/contact", "labelKey": "nav.contact" }
+    ],
+    "cta": {
+      "href": "/contact",
+      "labelKey": "nav.cta"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/profile.php?id=61563956113914",
+    "instagram": "",
+    "x": "https://x.com/mediahaus",
+    "tiktok": "https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc"
+  }
+}

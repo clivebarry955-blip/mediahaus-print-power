@@ -1,0 +1,147 @@
+{
+  "brand.logo.light": {
+    "src": "/media/logo-light.png",
+    "altKey": "header.alt.lightLogo",
+    "description": "Primary logomark for light backgrounds"
+  },
+  "brand.logo.dark": {
+    "src": "/media/logo-dark.png",
+    "altKey": "header.alt.darkLogo",
+    "description": "Reverse logomark for dark backgrounds"
+  },
+  "hero.primary": {
+    "src": "/media/hero-press.jpg",
+    "altKey": "media.hero.alt",
+    "description": "Hero banner showing premium wide-format setup"
+  },
+  "cta.support": {
+    "src": "/media/cta-team.jpg",
+    "altKey": "media.cta.alt",
+    "description": "Consultants reviewing a rollout plan"
+  },
+  "features.press": {
+    "src": "/media/features-rolls.jpg",
+    "altKey": "media.feature.alt",
+    "description": "Inkjet media rolls in studio"
+  },
+  "testimonials.vivid": {
+    "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+    "altKey": "media.testimonial.alt",
+    "description": "Remote example served from Unsplash"
+  },
+  "gallery.remote": {
+    "src": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1400&q=80",
+    "altKey": "media.remote.alt",
+    "description": "Demonstrates remote URL support"
+  },
+  "products.inkjet.bond-paper": {
+    "src": "/media/bond-paper.jpg",
+    "altKey": "media.products.inkjet.bondPaper.alt",
+    "description": "Bond paper rolls ready for printing"
+  },
+  "products.inkjet.coated-paper": {
+    "src": "/media/coated-paper.jpg",
+    "altKey": "media.products.inkjet.coatedPaper.alt",
+    "description": "Inkjet coated paper stack"
+  },
+  "products.inkjet.enhanced-coated-paper": {
+    "src": "/media/coated-paper-new.jpg",
+    "altKey": "media.products.inkjet.enhancedCoatedPaper.alt",
+    "description": "Enhanced coated paper detail"
+  },
+  "products.inkjet.photo-paper": {
+    "src": "/media/photo-paper-new.jpg",
+    "altKey": "media.products.inkjet.photoPaper.alt",
+    "description": "Photo paper rendering samples"
+  },
+  "products.inkjet.canvas-light": {
+    "src": "/media/indoor-lamination.jpg",
+    "altKey": "media.products.inkjet.canvasLight.alt",
+    "description": "Canvas media for indoor art reproductions"
+  },
+  "products.inkjet.canvas-classic": {
+    "src": "/media/outdoor-lamination.jpg",
+    "altKey": "media.products.inkjet.canvasClassic.alt",
+    "description": "Classic cotton canvas for premium art"
+  },
+  "products.inkjet.self-adhesive-vinyl": {
+    "src": "/media/vinyl-new.jpg",
+    "altKey": "media.products.inkjet.selfAdhesiveVinyl.alt",
+    "description": "Inkjet self-adhesive vinyl curl"
+  },
+  "products.solvent.matt-vinyl": {
+    "src": "/media/prod-vinyl.jpg",
+    "altKey": "media.products.solvent.mattVinyl.alt",
+    "description": "Matte solvent vinyl roll"
+  },
+  "products.solvent.gloss-vinyl": {
+    "src": "/media/gloss-vinyl.jpg",
+    "altKey": "media.products.solvent.glossVinyl.alt",
+    "description": "Glossy solvent vinyl detail"
+  },
+  "products.solvent.cast-vinyl": {
+    "src": "/media/cast-vinyl.jpg",
+    "altKey": "media.products.solvent.castVinyl.alt",
+    "description": "Cast vinyl applied to wrap"
+  },
+  "products.solvent.blockout-pvc": {
+    "src": "/media/blockout-banner.jpg",
+    "altKey": "media.products.solvent.blockoutPvc.alt",
+    "description": "Blockout PVC billboard sample"
+  },
+  "products.dtf.film": {
+    "src": "/media/dtf-film.jpg",
+    "altKey": "media.products.dtf.film.alt",
+    "description": "Direct-to-film transfer rolls"
+  },
+  "products.dtf.powder": {
+    "src": "/media/dtf-powder.jpg",
+    "altKey": "media.products.dtf.powder.alt",
+    "description": "DTF adhesive powder packaging"
+  },
+  "products.finishing.gloss-lamination": {
+    "src": "/media/gloss-laminate.jpg",
+    "altKey": "media.products.finishing.glossLamination.alt",
+    "description": "Gloss laminate film detail"
+  },
+  "products.finishing.matt-lamination": {
+    "src": "/media/matt-laminate.jpg",
+    "altKey": "media.products.finishing.mattLamination.alt",
+    "description": "Matt laminate finishing film"
+  },
+  "products.finishing.mounting-adhesive": {
+    "src": "/media/mounting-adhesive.jpg",
+    "altKey": "media.products.finishing.mountingAdhesive.alt",
+    "description": "Mounting adhesive roll"
+  },
+  "products.finishing.double-sided-mounting": {
+    "src": "/media/mounting-adhesive.jpg",
+    "altKey": "media.products.finishing.doubleSidedMounting.alt",
+    "description": "Double-sided mounting film"
+  },
+  "products.finishing.optically-clear-mounting": {
+    "src": "/media/mounting-adhesive.jpg",
+    "altKey": "media.products.finishing.opticallyClearMounting.alt",
+    "description": "Optically clear mounting film"
+  },
+  "products.inkjet": {
+    "src": "/Indoor Media.png",
+    "altKey": "media.products.inkjet.alt",
+    "description": "Indoor inkjet media kit"
+  },
+  "products.solvent": {
+    "src": "/Outdoor Media.png",
+    "altKey": "media.products.solvent.alt",
+    "description": "Solvent vinyl production shot"
+  },
+  "products.finishing": {
+    "src": "/Finishing Films.png",
+    "altKey": "media.products.finishing.alt",
+    "description": "Finishing film textures"
+  },
+  "products.dtf": {
+    "src": "/DTF Media.png",
+    "altKey": "media.products.dtf.alt",
+    "description": "Direct-to-film transfer media"
+  }
+}

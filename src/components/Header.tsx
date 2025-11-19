@@ -5,6 +5,9 @@ import TikTokIcon from "@/components/icons/TikTok";
 import XIcon from "@/components/icons/X";
 import { Button } from "../components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useCopy } from "@/hooks/useCopy";
+import { useSiteConfig } from "@/hooks/useSiteConfig";
+import SmartImage from "@/components/SmartImage";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,50 +32,31 @@ const Header = () => {
     }, DROPDOWN_CLOSE_DELAY);
   };
   const location = useLocation();
-
-  const navLinks: Array<
-    {
-      label: string;
-      href: string;
-      children?: { label: string; href: string }[];
-    }
-  > = [
-    { label: "Home", href: "/" },
-    {
-      label: "Inkjet Media",
-      href: "/inkjet-media",
-    },
-    {
-      label: "Solvent Media",
-      href: "/solvent-media",
-      children: [
-        { label: "PVC", href: "/solvent-media#pvc" },
-        { label: "Paper", href: "/solvent-media#paper" },
-        { label: "Vinyl", href: "/solvent-media#vinyl" },
-        { label: "Wallpaper", href: "/solvent-media#wallpaper" },
-        { label: "Other", href: "/solvent-media#other" },
-      ],
-    },
-    { label: "DTF Media", href: "/dtg-films" },
-    { label: "Finishing Films", href: "/finishing-films" },
-    { label: "Contact", href: "/contact" },
-  ];
+  const site = useSiteConfig();
+  const { t } = useCopy();
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border shadow-sm">
       <div className="container mx-auto px-8">
         <div className="flex items-center justify-between h-20 md:h-20">
           <Link to="/" className="flex items-center gap-3" aria-label="Mediahaus home">
-            <img src="/logo.png" alt="Mediahaus logo" className="h-8 md:h-10 w-auto block dark:hidden" />
-            <img src="/Mediahaus logo no lens.png" alt="Mediahaus logo" className="h-8 md:h-10 w-auto hidden dark:block" />
+            <SmartImage
+              id={site.media.logoLight}
+              className="h-8 md:h-10 w-auto object-contain block dark:hidden"
+            />
+            <SmartImage
+              id={site.media.logoDark}
+              className="h-8 md:h-10 w-auto object-contain hidden dark:block"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => {
+            {site.navigation.primary.map((link) => {
               const isActive = link.children
                 ? location.pathname.startsWith(link.href)
                 : location.pathname === link.href;
+              const label = t(link.labelKey, link.labelKey);
 
               // Dropdown for items with children (desktop)
               if (link.children && link.children.length > 0) {
@@ -87,7 +71,7 @@ const Header = () => {
                       to={link.href}
                       className={`px-4 py-2 text-sm font-medium transition-colors inline-flex items-center ${isActive ? 'text-accent' : 'text-foreground hover:text-accent'}`}
                     >
-                      {link.label}
+                      {label}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </Link>
                     <div
@@ -103,7 +87,7 @@ const Header = () => {
                           to={child.href}
                           className="block px-4 py-2 text-sm text-foreground hover:bg-secondary"
                         >
-                          {child.label}
+                          {t(child.labelKey, child.labelKey)}
                         </Link>
                       ))}
                     </div>
@@ -118,7 +102,7 @@ const Header = () => {
                   to={link.href}
                   className={`px-4 py-2 text-sm font-medium transition-colors ${isActive ? 'text-accent' : 'text-foreground hover:text-accent'}`}
                 >
-                  {link.label}
+                  {label}
                 </Link>
               ) : (
                 <a
@@ -126,7 +110,7 @@ const Header = () => {
                   href={link.href}
                   className={`px-4 py-2 text-sm font-medium transition-colors ${isActive ? 'text-accent' : 'text-foreground hover:text-accent'}`}
                 >
-                  {link.label}
+                  {label}
                 </a>
               );
             })}
@@ -134,47 +118,33 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-2">
             <div className="flex items-center gap-2 pr-2 mr-2 border-r border-border">
-              <a
-                href="https://www.facebook.com/profile.php?id=61563956113914"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-                className="text-muted-foreground hover:text-accent transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                aria-label="Instagram (coming soon)"
-                className="text-muted-foreground hover:text-accent transition-colors"
-                title="Instagram (coming soon)"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://x.com/mediahaus"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="X"
-                className="text-muted-foreground hover:text-accent transition-colors"
-                title="X"
-              >
-                <XIcon className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="TikTok"
-                className="text-muted-foreground hover:text-accent transition-colors"
-                title="TikTok"
-              >
-                <TikTokIcon className="h-5 w-5" />
-              </a>
+              {[
+                { id: "facebook", icon: Facebook, href: site.social.facebook, label: "Facebook" },
+                { id: "instagram", icon: Instagram, href: site.social.instagram, label: "Instagram (coming soon)" },
+                { id: "x", icon: XIcon, href: site.social.x, label: "X" },
+                { id: "tiktok", icon: TikTokIcon, href: site.social.tiktok, label: "TikTok" },
+              ]
+                .filter((item) => item.href)
+                .map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={item.label}
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                      title={item.label}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  );
+                })}
             </div>
             <ThemeToggle />
             <Button asChild>
-              <a href="/contact">Request Quote</a>
+              <a href={site.navigation.cta.href}>{t(site.navigation.cta.labelKey, "Request Quote")}</a>
             </Button>
           </div>
 
@@ -192,8 +162,9 @@ const Header = () => {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
-            {navLinks.map((link) => {
+            {site.navigation.primary.map((link) => {
               const isActive = location.pathname === link.href;
+              const label = t(link.labelKey, link.labelKey);
 
               // Dropdown (mobile)
               if (link.children && link.children.length > 0) {
@@ -205,7 +176,7 @@ const Header = () => {
                       className={`w-full flex items-center justify-between px-4 py-3 text-sm font-medium ${isActive ? 'bg-secondary text-accent' : 'text-foreground hover:bg-secondary'}`}
                       onClick={() => setOpenMobileDropdown(isOpen ? null : link.href)}
                     >
-                      <span>{link.label}</span>
+                      <span>{label}</span>
                       <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </button>
                     {isOpen && (
@@ -220,7 +191,7 @@ const Header = () => {
                               setOpenMobileDropdown(null);
                             }}
                           >
-                            {child.label}
+                            {t(child.labelKey, child.labelKey)}
                           </Link>
                         ))}
                       </div>
@@ -237,7 +208,7 @@ const Header = () => {
                   className={`block px-4 py-3 text-sm font-medium transition-colors ${isActive ? 'bg-secondary text-accent' : 'text-foreground hover:bg-secondary'}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {link.label}
+                  {label}
                 </Link>
               ) : (
                 <a
@@ -246,34 +217,38 @@ const Header = () => {
                   className={`block px-4 py-3 text-sm font-medium transition-colors ${isActive ? 'bg-secondary text-accent' : 'text-foreground hover:bg-secondary'}`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {link.label}
+                  {label}
                 </a>
               );
             })}
             <div className="flex items-center gap-4 px-4 py-3">
-              <a
-                href="https://www.facebook.com/profile.php?id=61563956113914"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-                className="text-muted-foreground hover:text-accent transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" aria-label="Instagram (coming soon)" className="text-muted-foreground hover:text-accent transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://x.com/mediahaus" target="_blank" rel="noreferrer" aria-label="X" className="text-muted-foreground hover:text-accent transition-colors">
-                <XIcon className="h-5 w-5" />
-              </a>
-              <a href="https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" aria-label="TikTok" className="text-muted-foreground hover:text-accent transition-colors">
-                <TikTokIcon className="h-5 w-5" />
-              </a>
+              {[
+                { id: "facebook", icon: Facebook, href: site.social.facebook, label: "Facebook" },
+                { id: "instagram", icon: Instagram, href: site.social.instagram, label: "Instagram" },
+                { id: "x", icon: XIcon, href: site.social.x, label: "X" },
+                { id: "tiktok", icon: TikTokIcon, href: site.social.tiktok, label: "TikTok" },
+              ]
+                .filter((item) => item.href)
+                .map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label={item.label}
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  );
+                })}
               <ThemeToggle />
             </div>
             <div className="px-4 pt-2">
               <Button asChild className="w-full">
-                <a href="/contact">Request Quote</a>
+                <a href={site.navigation.cta.href}>{t(site.navigation.cta.labelKey, "Request Quote")}</a>
               </Button>
             </div>
           </nav>

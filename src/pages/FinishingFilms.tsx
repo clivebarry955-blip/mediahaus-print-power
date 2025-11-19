@@ -1,49 +1,46 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import glossLaminate from "@/assets/gloss-laminate.jpg";
-import mountingAdhesive from "@/assets/mounting-adhesive.jpg";
 import ProductCard from "../components/ui/ProductCard";
+import { finishingImagePaths } from "@/data/finishingImagePaths";
 
 const FinishingFilms = () => {
   const products = [
-    {
-      name: "Lamination",
-      description:
-        "Laminating film for print protection and enhancement. UV resistant with excellent clarity.",
-      image: glossLaminate,
-      specs: {
-        thickness: "75 Microns, 100 Microns",
-        finish: "Gloss, Matt, Crystal",
-        sizes: "1370mm, 1520mm",
-        length: "50m, 100m",
-       
-      },
-    },
-    
-    {
-      name: "Double-sided Mounting Film",
-      description:
-        "A clear polyester mounting film, coated on both sides with a permanent pressure sensitive acrylic adhesive, one of which is protected by a Kraft siliconized release liner and one side a film release liner. The perfect product for the mounting of graphics onto various substrates such as correx etc.",
-      image: mountingAdhesive,
-      specs: {
-        thickness: "45 Micron",
-        finish: "N/A",
-        sizes: "1040mm, 1270mm",
-        length: "33m",
-      },
-    },
-    {
-      name: "Optically Clear Double-sided Mounting Film",
-      description:
-        "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
-      image: mountingAdhesive,
-      specs: {
-        thickness: "25 Micron",
-        finish: "N/A",
-        sizes: "1300mm",
-        length: "25m, 50m",
-      },
-    },
+        {
+          name: "Lamination",
+          description:
+            "Laminating film for print protection and enhancement. UV resistant with excellent clarity.",
+          image: finishingImagePaths.lamination,
+          specs: {
+            thickness: "75 Microns, 100 Microns",
+            finish: "Gloss, Matt, Crystal",
+            sizes: "1370mm, 1520mm",
+            length: "50m, 100m",
+          },
+        },
+        {
+          name: "Double-sided Mounting Film",
+          description:
+            "A clear polyester mounting film, coated on both sides with a permanent pressure sensitive acrylic adhesive, one of which is protected by a Kraft siliconized release liner and one side a film release liner. The perfect product for the mounting of graphics onto various substrates such as correx etc.",
+          image: finishingImagePaths.mountingAdhesive,
+          specs: {
+            thickness: "45 Micron",
+            finish: "N/A",
+            sizes: "1040mm, 1270mm",
+            length: "33m",
+          },
+        },
+        {
+          name: "Optically Clear Double-sided Mounting Film",
+          description:
+            "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
+          image: finishingImagePaths.mountingAdhesiveOpticallyClear,
+          specs: {
+            thickness: "25 Micron",
+            finish: "N/A",
+            sizes: "1300mm",
+            length: "25m, 50m",
+          },
+        },
   ];
 
   return (

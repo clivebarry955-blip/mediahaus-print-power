@@ -1,38 +1,42 @@
 import { ArrowRight, Printer, Palette, Shield, Shirt } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
-import indoorLamination from "@/assets/indoor-lamination.jpg";
-import outdoorLamination from "@/assets/outdoor-lamination.jpg";
-import prodDtg from "@/assets/prod-dtg.jpg";
-import heroRolls from "@/assets/hero-rolls.jpg";
+const indoorMedia = "/Indoor Media.png";
+const outdoorMedia = "/Outdoor Media.png";
+const finishingFilms = "/Finishing Films.png";
+const dtfMedia = "/DTF Media.png";
+import Text from "@/components/Text";
+import SmartImage from "@/components/SmartImage";
+import { useCopy } from "@/hooks/useCopy";
 
 const ProductCategories = () => {
+  const { t } = useCopy();
   const categories = [
     {
-      title: "Inkjet Media",
-      description: "Indoor papers and films for high quality prints.",
+      title: t("categories.inkjet.title"),
+      description: t("categories.inkjet.description"),
       icon: Printer,
-      image: indoorLamination,
+      mediaId: "products.inkjet",
       href: "/inkjet-media",
     },
     {
-      title: "Solvent Media",
-      description: "Durable outdoor vinyl for all signage and wraps.",
+      title: t("categories.solvent.title"),
+      description: t("categories.solvent.description"),
       icon: Palette,
-      image: heroRolls,
+      mediaId: "products.solvent",
       href: "/solvent-media",
     },
     {
-      title: "Finishing Films",
-      description: "Adhesive & Lamination films for protection.",
+      title: t("categories.finishing.title"),
+      description: t("categories.finishing.description"),
       icon: Shield,
-      image: outdoorLamination,
+      mediaId: "products.finishing",
       href: "/finishing-films",
     },
     {
-      title: "DTF Media",
-      description: "Direct-to-garment transfer films (no weeding).",
+      title: t("categories.dtf.title"),
+      description: t("categories.dtf.description"),
       icon: Shirt,
-      image: prodDtg,
+      mediaId: "products.dtf",
       href: "/dtg-films",
     },
   ];
@@ -40,10 +44,8 @@ const ProductCategories = () => {
   return (
     <section id="products" className="container mx-auto px-4 py-12 md:py-20 bg-secondary/30">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Categories</h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Professional-grade media for every printing application
-        </p>
+        <Text as="h2" id="categories.heading" className="text-3xl md:text-4xl font-heading font-semibold mb-4" />
+        <Text as="p" id="categories.subheading" className="text-lg text-muted-foreground max-w-2xl mx-auto" />
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -53,10 +55,10 @@ const ProductCategories = () => {
             <a key={index} href={category.href} className="group">
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                 <div className="relative h-64 overflow-hidden rounded-t-lg bg-muted">
-                  <img
-                    src={category.image}
-                    alt={category.title}
+                  <SmartImage
+                    id={category.mediaId}
                     className="w-full h-full object-contain transition-transform duration-300"
+                    sizes="(min-width: 768px) 100vw"
                   />
                   <div className="absolute inset-0 pointer-events-none"></div>
                   <div className="absolute bottom-4 left-4">

@@ -8,6 +8,8 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "content:check": "node scripts/content-check.mjs",
+    "content:extract": "node scripts/content-extract.mjs",
     "preview": "vite preview",
     "deploy": "wrangler pages deploy",
     "deploy:preview": "wrangler pages deploy --branch preview"

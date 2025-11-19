@@ -2,9 +2,18 @@ import { Link } from "react-router-dom";
 import { Facebook, Instagram } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTok";
 import XIcon from "@/components/icons/X";
+import Text from "@/components/Text";
+import { useCopy } from "@/hooks/useCopy";
+import { useSiteConfig } from "@/hooks/useSiteConfig";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useCopy();
+  const site = useSiteConfig();
+  const legal = t("footer.legal", `© ${currentYear} ${site.brand.name}`).replace(
+    "{year}",
+    currentYear.toString(),
+  );
 
   return (
     <footer className="bg-card border-t border-border">
@@ -20,50 +29,35 @@ const Footer = () => {
             </Link>
             <span className="hidden md:inline-block opacity-40">•</span>
             <div className="flex items-center gap-4">
-              <a
-                href="https://www.facebook.com/profile.php?id=61563956113914"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-foreground transition-colors"
-                aria-label="Facebook"
-                title="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@mediahausmarketin?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-foreground transition-colors"
-                aria-label="TikTok"
-                title="TikTok"
-              >
-                <TikTokIcon className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="hover:text-foreground transition-colors"
-                aria-label="Instagram (coming soon)"
-                title="Instagram (coming soon)"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://x.com/mediahaus"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-foreground transition-colors"
-                aria-label="X"
-                title="X"
-              >
-                <XIcon className="h-5 w-5" />
-              </a>
+              {[
+                { id: "facebook", icon: Facebook, href: site.social.facebook, label: "Facebook" },
+                { id: "tiktok", icon: TikTokIcon, href: site.social.tiktok, label: "TikTok" },
+                { id: "instagram", icon: Instagram, href: site.social.instagram, label: "Instagram" },
+                { id: "x", icon: XIcon, href: site.social.x, label: "X" },
+              ]
+                .filter((item) => item.href)
+                .map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={item.id}
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-foreground transition-colors"
+                      aria-label={item.label}
+                      title={item.label}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  );
+                })}
             </div>
           </div>
 
           <div className="text-sm text-muted-foreground text-center">
-            <p>© {currentYear} MEDIAHAUS — All rights reserved.</p>
-            <p className="mt-1">A DesignMedia Production.</p>
+            <p className="font-primary">{legal}</p>
+            <Text as="p" id="footer.tagline" className="mt-1" />
           </div>
         </div>
       </div>
