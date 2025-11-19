@@ -66,8 +66,6 @@
   },
   "navigation": {
     "primary": [
-      { "id": "home", "href": "/", "labelKey": "nav.home" },
-      { "id": "products", "href": "/products", "labelKey": "nav.products" },
       { "id": "inkjet", "href": "/inkjet-media", "labelKey": "nav.inkjet" },
       { "id": "solvent", "href": "/solvent-media", "labelKey": "nav.solvent", "children": [
         { "id": "solvent.pvc", "href": "/solvent-media#pvc", "labelKey": "nav.solvent.pvc" },
