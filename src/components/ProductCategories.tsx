@@ -14,28 +14,24 @@ const ProductCategories = () => {
     {
       title: t("categories.inkjet.title"),
       description: t("categories.inkjet.description"),
-      icon: Printer,
       mediaId: "products.inkjet",
       href: "/inkjet-media",
     },
     {
       title: t("categories.solvent.title"),
       description: t("categories.solvent.description"),
-      icon: Palette,
       mediaId: "products.solvent",
       href: "/solvent-media",
     },
     {
       title: t("categories.finishing.title"),
       description: t("categories.finishing.description"),
-      icon: Shield,
       mediaId: "products.finishing",
       href: "/finishing-films",
     },
     {
       title: t("categories.dtf.title"),
       description: t("categories.dtf.description"),
-      icon: Shirt,
       mediaId: "products.dtf",
       href: "/dtg-films",
     },
@@ -50,7 +46,6 @@ const ProductCategories = () => {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((category, index) => {
-          const Icon = category.icon;
           return (
             <a key={index} href={category.href} className="group">
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
@@ -60,10 +55,6 @@ const ProductCategories = () => {
                     className="w-full h-full object-contain transition-transform duration-300"
                     sizes="(min-width: 768px) 100vw"
                   />
-                  <div className="absolute inset-0 pointer-events-none"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
                 </div>
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
