@@ -80,7 +80,7 @@ const InkjetMedia = () => {
       specs: [
         { label: "Thickness", value: "350gsm" },
         { label: "Finish", value: "Matt" },
-        { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1524mm" },
+        { label: "Available Sizes", value: "432mm, 610mm, 914mm, 1118mm, 1370mm, 1524mm" },
         { label: "Length", value: "18m" },
         { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
