@@ -39,8 +39,8 @@ const InkjetMedia = () => {
         "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for fine art reproduction and proofing.",
       image: inkjetImagePaths.enhancedCoated,
       specs: [
-        { label: "Thickness", value: "200gsm" },
-        { label: "Finish", value: "Satin / Matt" },
+        { label: "Thickness", value: "230gsm" },
+        { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "610mm, 914mm, 1118mm" },
         { label: "Length", value: "30m" },
         { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
