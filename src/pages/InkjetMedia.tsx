@@ -88,13 +88,13 @@ const InkjetMedia = () => {
     {
       name: "Self-Adhesive Vinyl (Inkjet)",
       description:
-        "Multipurpose self-adhesive vinyl for indoor graphics and short-term signage. Optimized for inkjet with clean, vivid print quality.",
+        "Multipurpose self-adhesive vinyl for indoor graphics, stickers and short-term signage. Optimized for inkjet with clean, vivid print quality.",
       image: inkjetImagePaths.vinyl,
       specs: [
-        { label: "Thickness", value: "100–150 Microns" },
-        { label: "Finish", value: "Matt / Gloss" },
-        { label: "Available Sizes", value: "610mm, 914mm, 1370mm, 1520mm" },
-        { label: "Length", value: "50m" },
+        { label: "Thickness", value: "150 Microns" },
+        { label: "Finish", value: "Matt" },
+        { label: "Available Sizes", value: "610mm, 914mm" },
+        { label: "Length", value: "30m" },
         { label: "Printer Compatibility", value: "Inkjet, Latex and UV" },
       ],
     },
