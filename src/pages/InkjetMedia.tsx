@@ -36,7 +36,7 @@ const InkjetMedia = () => {
     {
       name: "Enhanced Coated Paper",
       description:
-        "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for premium indoor posters and proofing.",
+        "Premium coated paper optimized for higher color gamut, sharper detail and faster drying. Ideal for fine art applications and proofing.",
       image: inkjetImagePaths.enhancedCoated,
       specs: [
         { label: "Thickness", value: "200gsm" },
