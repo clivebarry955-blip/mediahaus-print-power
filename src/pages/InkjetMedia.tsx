@@ -110,7 +110,7 @@ const InkjetMedia = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Inkjet Media</h1>
               <p className="text-lg text-muted-foreground">
-               High-Quality Indoor Printing Papers and Films. Premium Indoor Media for Professional Prints. Custom Indoor Banner Papers and Vinyl Films for Superior Quality.
+                Premium indoor media for professional prints.
               </p>
             </div>
           </div>
