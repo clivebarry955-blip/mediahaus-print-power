@@ -66,17 +66,63 @@
   },
   "navigation": {
     "primary": [
-      { "id": "inkjet", "href": "/inkjet-media", "labelKey": "nav.inkjet" },
-      { "id": "solvent", "href": "/solvent-media", "labelKey": "nav.solvent", "children": [
-        { "id": "solvent.pvc", "href": "/solvent-media#pvc", "labelKey": "nav.solvent.pvc" },
-        { "id": "solvent.paper", "href": "/solvent-media#paper", "labelKey": "nav.solvent.paper" },
-        { "id": "solvent.vinyl", "href": "/solvent-media#vinyl", "labelKey": "nav.solvent.vinyl" },
-        { "id": "solvent.wallpaper", "href": "/solvent-media#wallpaper", "labelKey": "nav.solvent.wallpaper" },
-        { "id": "solvent.other", "href": "/solvent-media#other", "labelKey": "nav.solvent.other" }
-      ] },
-      { "id": "dtf", "href": "/dtg-films", "labelKey": "nav.dtf" },
-      { "id": "finishing", "href": "/finishing-films", "labelKey": "nav.finishing" },
-      { "id": "contact", "href": "/contact", "labelKey": "nav.contact" }
+      {
+        "id": "home",
+        "href": "/",
+        "labelKey": "nav.home"
+      },
+      {
+        "id": "inkjet",
+        "href": "/inkjet-media",
+        "labelKey": "nav.inkjet"
+      },
+      {
+        "id": "solvent",
+        "href": "/solvent-media",
+        "labelKey": "nav.solvent",
+        "children": [
+          {
+            "id": "solvent.pvc",
+            "href": "/solvent-media#pvc",
+            "labelKey": "nav.solvent.pvc"
+          },
+          {
+            "id": "solvent.paper",
+            "href": "/solvent-media#paper",
+            "labelKey": "nav.solvent.paper"
+          },
+          {
+            "id": "solvent.vinyl",
+            "href": "/solvent-media#vinyl",
+            "labelKey": "nav.solvent.vinyl"
+          },
+          {
+            "id": "solvent.wallpaper",
+            "href": "/solvent-media#wallpaper",
+            "labelKey": "nav.solvent.wallpaper"
+          },
+          {
+            "id": "solvent.other",
+            "href": "/solvent-media#other",
+            "labelKey": "nav.solvent.other"
+          }
+        ]
+      },
+      {
+        "id": "dtf",
+        "href": "/dtg-films",
+        "labelKey": "nav.dtf"
+      },
+      {
+        "id": "finishing",
+        "href": "/finishing-films",
+        "labelKey": "nav.finishing"
+      },
+      {
+        "id": "contact",
+        "href": "/contact",
+        "labelKey": "nav.contact"
+      }
     ],
     "cta": {
       "href": "/contact",
