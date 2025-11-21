@@ -10,7 +10,7 @@ const SolventMedia = () => {
     { id: "pvc", name: "PVC" },
     { id: "paper", name: "Paper" },
     { id: "vinyl", name: "Vinyl" },
-    { id: "wallpaper", name: "Wallpaper" },
+    { id: "wallpaper", name: "Canvas & Wall" },
     { id: "other", name: "Other" },
   ];
 
@@ -25,8 +25,13 @@ const SolventMedia = () => {
   const otherNameExceptions = new Set([
     toId("T-Shirt Transfer Vinyl"),
   ]);
+  const canvasAndWallExceptions = new Set([
+    toId("Haus Polyester Canvas"),
+    toId("Haus Cotton Canvas"),
+  ]);
   const getSubCategory = (name: string) => {
     const n = name.toLowerCase();
+    if (canvasAndWallExceptions.has(n)) return "wallpaper";
     if (n.includes("pvc") || pvcNameExceptions.has(n)) return "pvc";
     // Check wallpaper before paper to avoid misclassification
     if (n.includes("wallpaper")) return "wallpaper";
