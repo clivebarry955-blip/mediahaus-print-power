@@ -82,11 +82,6 @@
         "labelKey": "nav.solvent",
         "children": [
           {
-            "id": "solvent.pvc",
-            "href": "/solvent-media#pvc",
-            "labelKey": "nav.solvent.pvc"
-          },
-          {
             "id": "solvent.paper",
             "href": "/solvent-media#paper",
             "labelKey": "nav.solvent.paper"
@@ -95,6 +90,11 @@
             "id": "solvent.vinyl",
             "href": "/solvent-media#vinyl",
             "labelKey": "nav.solvent.vinyl"
+          },
+          {
+            "id": "solvent.pvc",
+            "href": "/solvent-media#pvc",
+            "labelKey": "nav.solvent.pvc"
           },
           {
             "id": "solvent.wallpaper",
