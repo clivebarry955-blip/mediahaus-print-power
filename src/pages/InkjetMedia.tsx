@@ -23,7 +23,7 @@ const InkjetMedia = () => {
     {
       name: "Coated Paper",
       description:
-        "A matt white paper with a special clay coating which allows the ink not to bleed for very sharp images.",
+        "A matt white paper with a special clay coating which allows the ink not to bleed.",
       image: inkjetImagePaths.coatedPaper,
       specs: [
         { label: "Thickness", value: "90gsm, 125gsm, 180gsm" },
