@@ -143,7 +143,7 @@ const SolventMedia = () => {
         { label: "Durability", value: "4 Years Outdoor" },
         {
           label: "Finish",
-          value: "Matt, matt grey-back ,gloss, gloss grey-back, gloss clear",
+          value: "Matt, matt grey-back, matt clear, gloss, gloss grey-back, gloss clear",
         },
         { label: "Available Sizes", value: "1370mm, 1600mm" },
         { label: "Length", value: "50m" },
