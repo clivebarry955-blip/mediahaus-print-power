@@ -109,17 +109,16 @@ const SolventMedia = () => {
     },
     {
       name: "Haus Monomeric Vinyl 1 Year",
-      description: "Durable monomeric vinyl suitable for short-term outdoor use. Ideal for vehicle graphics and signage.",
+      description: "Durable monomeric vinyl suitable for short-term outdoor use.",
       image: solventImagePaths.hausMonomericVinyl1Year,
       specs: [
-        { label: "Thickness", value: "100 Microns" },
+        { label: "Thickness", value: "80 Microns" },
         { label: "Durability", value: "1 Year Outdoor" },
-        { label: "Finish", value: "Matt" },
+        { label: "Finish", value: "Matt, gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -133,8 +132,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -148,8 +146,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -163,8 +160,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -178,8 +174,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -193,8 +188,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -208,8 +202,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -223,8 +216,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -238,8 +230,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -253,8 +244,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -268,8 +258,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -283,8 +272,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -298,8 +286,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -313,8 +300,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -328,8 +314,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1600mm, 3200mm" },
         { label: "Sizes", value: "1370mm, 1600mm, 3200mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -343,8 +328,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "900mm, 1350mm, 1800mm, 2700mm, 3200mm" },
         { label: "Sizes", value: "900mm, 1350mm, 1800mm, 2700mm, 3200mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -358,8 +342,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1600mm, 2500mm, 3200mm" },
         { label: "Sizes", value: "1370mm, 1600mm, 2500mm, 3200mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -373,8 +356,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1600mm, 3200mm" },
         { label: "Sizes", value: "1370mm, 1600mm, 3200mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -388,8 +370,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "420mm, 610mm" },
         { label: "Sizes", value: "420mm, 610mm" },
         { label: "Length", value: "25m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -403,8 +384,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -418,8 +398,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "914mm, 1067mm" },
         { label: "Sizes", value: "914mm, 1067mm" },
         { label: "Length", value: "30m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -433,8 +412,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "914mm, 1067mm" },
         { label: "Sizes", value: "914mm, 1067mm" },
         { label: "Length", value: "30m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -448,8 +426,7 @@ const SolventMedia = () => {
         { label: "Available Sizes", value: "914mm, 1067mm" },
         { label: "Sizes", value: "914mm, 1067mm" },
         { label: "Length", value: "30m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
-        { label: "Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
@@ -464,7 +441,6 @@ const SolventMedia = () => {
         { label: "Sizes", value: "1067mm" },
         { label: "Length", value: "10m" },
         { label: "Printer Compatibility", value: "Latex and UV" },
-        { label: "Compatibility", value: "Latex and UV" },
       ],
     },
     {
@@ -479,7 +455,6 @@ const SolventMedia = () => {
         { label: "Sizes", value: "1067mm" },
         { label: "Length", value: "10m" },
         { label: "Printer Compatibility", value: "Latex and UV" },
-        { label: "Compatibility", value: "Latex and UV" },
       ],
     },
     {
@@ -494,7 +469,6 @@ const SolventMedia = () => {
         { label: "Sizes", value: "1067mm" },
         { label: "Length", value: "10m" },
         { label: "Printer Compatibility", value: "Latex and UV" },
-        { label: "Compatibility", value: "Latex and UV" },
       ],
     },
   ];
