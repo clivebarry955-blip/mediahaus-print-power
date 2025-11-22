@@ -127,7 +127,10 @@ const SolventMedia = () => {
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3 Years Outdoor" },
-        { label: "Finish", value: "Matt, gloss" },
+        {
+          label: "Finish",
+          value: "Matt, matt grey-back ,gloss,  gloss grey-back, gloss clear",
+        },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
@@ -140,8 +143,11 @@ const SolventMedia = () => {
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "4 Years Outdoor" },
-        { label: "Finish", value: "Matt, gloss" },
-        { label: "Available Sizes", value: "1370mm, 1520mm" },
+        {
+          label: "Finish",
+          value: "Matt, Matt grey-back, gloss, gloss grey-back, matt clear, gloss clear",
+        },
+        { label: "Available Sizes", value: "1370mm, 1600mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
