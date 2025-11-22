@@ -65,7 +65,7 @@ const SolventMedia = () => {
         { label: "Finish", value: "Satin" },
         { label: "Available Sizes", value: "914mm, 1270mm, 1370mm, 1524mm" },
         { label: "Length", value: "50m" },
-        { label: "Printer Compatibility", value: "Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
     },
     {
