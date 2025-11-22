@@ -12,10 +12,10 @@ const DTGFilms = () => {
       image: dtfFilm,
       specs: [
         { label: "Thickness", value: "75 Microns" },
-        { label: "Finish", value: "Matt" },
-        { label: "Sizes", value: "300mm, 400mm, 600mm" },
+        { label: "Finish", value: "Single matt, double matt" },
+        { label: "Sizes", value: "300mm, 600mm" },
         { label: "Length", value: "100m" },
-        { label: "Application", value: "DTF Printers" },
+        { label: "Application", value: "All  fabric types." },
       ],
     },
     {
@@ -25,7 +25,7 @@ const DTGFilms = () => {
       specs: [
         { label: "Particle Size", value: "80-120 mesh" },
         { label: "Melting Point", value: "110-120°C" },
-        { label: "Package Size", value: "1kg, 5kg, 10kg" },
+        { label: "Package Size", value: "1kg, 2kg, 5kg" },
         { label: "Application", value: "All fabric types" },
       ],
     },

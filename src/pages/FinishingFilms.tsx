@@ -8,13 +8,13 @@ const FinishingFilms = () => {
         {
           name: "Lamination",
           description:
-            "Laminating film for print protection and enhancement. UV resistant with excellent clarity.",
+            "Various laminating film for print protection and enhancement. UV resistant with excellent clarity.",
           image: finishingImagePaths.lamination,
           specs: {
-            thickness: "75 Microns, 100 Microns",
-            finish: "Gloss, Matt, Crystal",
+            thickness: "80 Microns, 100 Microns",
+            finish: "Matt, Gloss,  Crystal",
             sizes: "1370mm, 1520mm",
-            length: "50m, 100m",
+            length: "50m",
           },
         },
         {
@@ -32,12 +32,12 @@ const FinishingFilms = () => {
         {
           name: "Optically Clear Double-sided Mounting Film",
           description:
-            "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print to acrylic or glass.",
+            "A 100% optically transparent polyester film. Both sides of the film have a high-viscosity solvent-acrylic adhesive that are protected by a clear film lining. Used for special applications that require full clarity, such as mounting a print onto acrylic or glass.",
           image: finishingImagePaths.mountingAdhesiveOpticallyClear,
           specs: {
             thickness: "25 Micron",
             finish: "N/A",
-            sizes: "1300mm",
+            sizes: "1270mm",
             length: "25m, 50m",
           },
         },
