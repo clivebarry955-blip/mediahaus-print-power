@@ -7,9 +7,9 @@ import { solventImagePaths } from "@/data/solventImagePaths";
 const SolventMedia = () => {
   // Sub-categories for Solvent Media
   const sections = [
-    { id: "pvc", name: "PVC" },
     { id: "paper", name: "Paper" },
     { id: "vinyl", name: "Vinyl" },
+    { id: "pvc", name: "PVC" },
     { id: "wallpaper", name: "Canvas & Wall" },
     { id: "other", name: "Other" },
   ];
