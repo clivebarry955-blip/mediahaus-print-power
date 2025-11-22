@@ -1,7 +1,7 @@
 import { withBaseUrl } from "./solventImagePaths";
 
 const finishingFilmsBasePath = withBaseUrl(
-  "05 Finishing Films-20251119T195126Z-1-001/05 Finishing Films"
+  "05 Finishing Films-20251119T195126Z-1-001 (2)/05 Finishing Films"
 );
 
 export const finishingImagePaths = {
