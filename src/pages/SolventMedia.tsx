@@ -88,7 +88,7 @@ const SolventMedia = () => {
       image: solventImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "220gsm" },
-        { label: "Finish", value: "Matt and Gloss" },
+        { label: "Finish", value: "Matt, Gloss" },
         { label: "Available Sizes", value: "914mm, 1270mm, 1524mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
