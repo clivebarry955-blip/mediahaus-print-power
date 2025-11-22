@@ -128,7 +128,7 @@ const SolventMedia = () => {
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3 Years Outdoor" },
-        { label: "Finish", value: "Matt" },
+        { label: "Finish", value: "Matt, gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
@@ -142,7 +142,7 @@ const SolventMedia = () => {
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "4 Years Outdoor" },
-        { label: "Finish", value: "Matt" },
+        { label: "Finish", value: "Matt, gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
@@ -156,7 +156,7 @@ const SolventMedia = () => {
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "3-5 Years Outdoor" },
-        { label: "Finish", value: "Matt" },
+        { label: "Finish", value: "Matt, gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
