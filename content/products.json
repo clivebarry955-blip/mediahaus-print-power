@@ -26,14 +26,14 @@
       "id": "bond-paper",
       "categoryId": "inkjet",
       "name": "Bond Paper",
-      "description": "A standard uncoated 80gsm paper used to print CAD drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won't yellow over time. Fits most large-format printers and engineering copiers.",
+      "description": "A standard uncoated 80gsm paper used to print cad drawings, landscaping plans, blueprints and templates. Bond paper is acid-free and won’t yellow over time. Fits most large-format printers and engineering copiers.",
       "imageId": "products.inkjet.bond-paper",
       "specs": [
         { "label": "Thickness", "value": "80gsm" },
         { "label": "Finish", "value": "Matt" },
         { "label": "Available Sizes", "value": "294mm, 420mm, 594mm, 610mm, 841mm, 914mm, 1118mm, 1270mm, 1370mm, 1524mm" },
         { "label": "Length", "value": "50m, 100m, 150m" },
-        { "label": "Printer Compatibility", "value": "Inkjet, Solvent, Eco-solvent, Latex and UV" }
+        { "label": "Printer Compatibility", "value": "Inkjet, Eco-solvent, Latex and UV" }
       ]
     },
     {

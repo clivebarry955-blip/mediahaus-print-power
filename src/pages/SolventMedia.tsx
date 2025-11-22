@@ -52,7 +52,7 @@ const SolventMedia = () => {
         { label: "Finish", value: "Matt" },
         { label: "Available Sizes", value: "294mm, 420mm, 594mm, 610mm, 841mm, 914mm, 1118mm, 1270mm, 1370mm, 1524mm" },
         { label: "Length", value: "50m, 100m, 150m" },
-        { label: "Printer Compatibility", value: "Inkjet, Solvent, Eco-solvent, Latex and UV" },
+        { label: "Printer Compatibility", value: "Inkjet, Eco-solvent, Latex and UV" },
       ],
     },
     {
