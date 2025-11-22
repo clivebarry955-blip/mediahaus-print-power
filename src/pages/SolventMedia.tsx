@@ -138,16 +138,14 @@ const SolventMedia = () => {
     },
     {
       name: "Orajet 3164 Monomeric Vinyl 4 Year",
-      description: "Premium monomeric vinyl with excellent print quality and durability for outdoor applications.",
+      description:
+        "Premium european brand monomeric vinyl with excellent print quality and durability for outdoor applications.",
       image: solventImagePaths.oraJet3164,
       specs: [
         { label: "Thickness", value: "100 Microns" },
         { label: "Durability", value: "4 Years Outdoor" },
-        {
-          label: "Finish",
-          value: "Matt, Matt grey-back, gloss, gloss grey-back, matt clear, gloss clear",
-        },
-        { label: "Available Sizes", value: "1370mm, 1600mm" },
+        { label: "Finish", value: "Matt, gloss" },
+        { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
