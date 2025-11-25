@@ -66,7 +66,7 @@ export const solventImagePaths = {
   backlitPVC: `${solventMediaBasePath}/03 PVC/03 Backlit PVC/Backlit PVC.webp`,
   meshWithLiner: `${solventMediaBasePath}/03 PVC/04 Mesh with Liner/Mesh with liner 1.jpg`,
   tShirtTransferVinyl: `${solventMediaBasePath}/05 Other/01 PU Print T-Shirt Transfer Vinyl/LightTransfer_1748x.webp`,
-  backlitFilm: `${solventMediaBasePath}/03 PVC/03 Backlit PVC/Backlit PVC.webp`,
+  backlitFilm: withBaseUrl("Backlit Film.jpg"),
   hausPolyesterCanvas: `${solventMediaBasePath}/04 Canvas & Wall/01 Polyester Canvas Lite/01 Polyester Canvas 260gsm.jpg`,
   hausCottonCanvas: `${solventMediaBasePath}/04 Canvas & Wall/02 Cotton Canvas/01 Cotton Canvas 350gsm.jpg`,
   picassoCanvas: `${picassoCanvasBasePath}/01 Picasso Canvas 370gsm.jpg`,
