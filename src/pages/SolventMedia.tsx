@@ -88,7 +88,7 @@ const SolventMedia = () => {
       image: solventImagePaths.photoPaper,
       specs: [
         { label: "Thickness", value: "220gsm" },
-        { label: "Finish", value: "Matt, Gloss" },
+        { label: "Finish", value: "Satin, Gloss" },
         { label: "Available Sizes", value: "914mm, 1270mm, 1524mm" },
         { label: "Length", value: "50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
@@ -109,11 +109,11 @@ const SolventMedia = () => {
     },
     {
       name: "Haus Monomeric Vinyl 1 Year",
-      description: "Durable monomeric vinyl suitable for short-term outdoor use.",
+      description: "Durable monomeric vinyl suitable for short-term use.",
       image: solventImagePaths.hausMonomericVinyl1Year,
       specs: [
         { label: "Thickness", value: "80 Microns" },
-        { label: "Durability", value: "1 Year Outdoor" },
+        { label: "Durability", value: "One Year" },
         { label: "Finish", value: "Matt, gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "50m" },
@@ -143,7 +143,7 @@ const SolventMedia = () => {
         { label: "Durability", value: "4 Years Outdoor" },
         {
           label: "Finish",
-          value: "Matt, matt grey-back, matt clear, gloss, gloss grey-back, gloss clear",
+          value: "Matt, Matt grayback, Matt clear\ngloss, gloss grayback, gloss clear",
         },
         { label: "Available Sizes", value: "1370mm, 1600mm" },
         { label: "Length", value: "50m" },
@@ -169,7 +169,7 @@ const SolventMedia = () => {
       image: solventImagePaths.hausPerforatedVinyl,
       specs: [
         { label: "Thickness", value: "140 Microns" },
-        { label: "Durability", value: "2 Years Outdoor" },
+        { label: "Durability", value: "2 Years" },
         { label: "Finish", value: "gloss" },
         { label: "Available Sizes", value: "1370mm, 1520mm" },
         { label: "Length", value: "25m,50m" },
@@ -193,7 +193,7 @@ const SolventMedia = () => {
     {
       name: "Haus Eezidot Vinyl",
       description:
-        "Easy to apply vinyl with a dot pattern adhesive for bubble-free application. Easily removeable, leaving no residue behind. re-useable.",
+        "Easy to apply vinyl with a dot pattern adhesive for bubble free application. Easily repositionable, easily removable, reusable, leaving no residue behind.",
       image: solventImagePaths.hausEezidotVinyl,
       specs: [
         { label: "Thickness", value: "100 Microns" },
@@ -234,7 +234,7 @@ const SolventMedia = () => {
     {
       name: "Haus 5 Year Polymeric Vinyl",
       description:
-        "Premium vinyl offering a 5 year  outdoor durability. Suitable for long-term branding and signage aswell as short term vehicle branding.",
+        "Premium vinyl offering a five-year outdoor durability, suitable for long-term branding and signage as well as short-term vehicle branding on flat surfaces.",
       image: solventImagePaths.haus5YearPolymericVinyl,
       specs: [
         { label: "Thickness", value: "60 Microns" },
@@ -373,7 +373,7 @@ const SolventMedia = () => {
         { label: "Thickness", value: "200 Microns" },
         { label: "Durability", value: "3 Years Indoor" },
         { label: "Finish", value: "Matt, gloss" },
-        { label: "Available Sizes", value: "1524mm" },
+        { label: "Available Sizes", value: "1370mm, 1524mm" },
         { label: "Length", value: "25m, 50m" },
         { label: "Printer Compatibility", value: "Eco-solvent, Latex and UV" },
       ],
